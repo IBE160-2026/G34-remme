@@ -32,5 +32,5 @@ Pull the latest from GitHub. Then update the product brief to address the teache
 ### Åpne punkter
 - Finalize the brief: memlog audit, `bmad-review` proofreading pass (structure + prose), user review, then set status to `final`.
 - Create the test set: 5 real trainee ads with must- and should-requirements noted beforehand, and 3 fictional CVs with answer keys.
-- The final deadline for the application is still unknown.
+- ~~The final deadline for the application is still unknown.~~ Resolved: 15.12.2026 kl. 15:00. The brief's "Åpne spørsmål" section was replaced with a "Tidsramme" (timeline) section (about 6 weeks, solo, core flow first).
 - Next step in BMAD: the PRD.
