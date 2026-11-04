@@ -10,8 +10,8 @@ Commit the remaining uncommitted changes in the working copy.
 - Committed only the BMAD files. The `README.md` change is a stray line (`git p`) under "Medlemmer" and was left out, so the user can decide what to do with it.
 
 ### Resultat
-- Commit `2300081` "Legg til BMAD-installasjon og skills" (262 files). Not pushed.
-- `README.md` is still uncommitted with the stray line.
+- Commit `2300081` "Legg til BMAD-installasjon og skills" (262 files). Pushed to `origin/main`.
+- `README.md`: the stray line `git p` was a mistake (the user confirmed this) and was discarded with `git restore`. The working copy is clean.
 
 ### Åpne punkter
 - Ingen.
