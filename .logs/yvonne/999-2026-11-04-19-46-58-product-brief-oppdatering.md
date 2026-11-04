@@ -30,7 +30,7 @@ Pull the latest from GitHub. Then update the product brief to address the teache
 - The finalize step (memlog audit and the proofreading pass) was not run, because the user asked to push first.
 
 ### Åpne punkter
-- Finalize the brief: memlog audit, `bmad-review` proofreading pass (structure + prose), user review, then set status to `final`.
+- ~~Finalize the brief~~ Resolved: memlog audit done with the user, `bmad-review` structure + prose pass run (user accepted everything except B7, and A2 uses a comma), brief and addendum set to `final`. Commit `328f8fe`. UX sketches are deferred to `bmad-ux` after the PRD.
 - Create the test set: 5 real trainee ads with must- and should-requirements noted beforehand, and 3 fictional CVs with answer keys.
 - ~~The final deadline for the application is still unknown.~~ Resolved: 15.12.2026 kl. 15:00. The brief's "Åpne spørsmål" section was replaced with a "Tidsramme" (timeline) section (about 6 weeks, solo, core flow first).
 - Next step in BMAD: the PRD.
