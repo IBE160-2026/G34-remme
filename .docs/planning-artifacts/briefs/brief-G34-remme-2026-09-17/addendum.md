@@ -1,6 +1,6 @@
 ---
 title: "Addendum: CV & Jobb applikasjonsassistent"
-status: draft
+status: final
 created: 2026-09-17
 updated: 2026-11-04
 ---
@@ -14,7 +14,7 @@ Utfyllende bakgrunn og tekniske betraktninger som ikke hører hjemme i selve bri
 - **Jobscan** — ren nøkkelord-matcher: lim inn CV + annonse, få match-score og liste over manglende nøkkelord. Bygger ikke CV-er, kun scoring. Abonnement (~$49,95/mnd).
 - **Teal** — full jobbsøk-arbeidsflate: lagrer stillingsannonser, sporer søknader, og tilpasser CV-versjon per stilling. Gratis nivå + betalt ($29/mnd for Teal+).
 - **Rezi** — bygger, skriver om, scorer og "target"-tilpasser CV i én plattform. Høy ATS-parse-rate på enkeltkolonne-maler.
-- **Enhancv / Kickresume** — designfokuserte CV-byggere med en bolted-on ATS-sjekk/match-funksjon; mindre fokus på dyp tilpasning.
+- **Enhancv / Kickresume** — designfokuserte CV-byggere med en påklistret ATS-sjekk/match-funksjon; mindre fokus på dyp tilpasning.
 - **LinkedIn / ren ChatGPT-bruk** — uformelle, ustrukturerte alternativer uten fast pipeline.
 - Fellestrekk: ingen lukker hele loopen fra én master-CV til et ferdig, sendeklart resultat — brukeren må alltid redigere manuelt etterpå.
 
@@ -32,10 +32,9 @@ Utfyllende bakgrunn og tekniske betraktninger som ikke hører hjemme i selve bri
 
 Oppdatert 2026-11-04: v1 bruker kun innlimt tekst for både CV og annonse (etter tilbakemelding fra faglærer). Lenke, bilde og PDF er flyttet til v2. Vurderingene under gjelder derfor v2:
 - **Lenke** — krever skraping av ekstern side (varierende HTML-struktur, mulig behov for headless-rendering, robots.txt-hensyn).
-- **Limt inn tekst** — enklest, ingen ekstern avhengighet.
 - **Bilde/skjermutklipp** — krever OCR eller en bildeforstående modell før annonsen kan analyseres.
 
-CV kan lastes opp som tekst eller PDF — PDF krever tekstuttrekk (og potensielt layout-håndtering hvis CV-en er visuelt formatert i kolonner e.l.).
+I v2 kan CV også lastes opp som PDF, som krever tekstuttrekk (og potensielt layout-håndtering hvis CV-en er visuelt formatert i kolonner e.l.).
 
 Disse er implementasjonsdetaljer som bør vurderes nærmere når v2 planlegges.
 
@@ -45,7 +44,3 @@ Disse er implementasjonsdetaljer som bør vurderes nærmere når v2 planlegges.
 - 3 fiktive CV-er for studenter i siste studieår, med fasit (truffet / delvis / mangler) per krav per annonse.
 - Én eller to av fasit-casene gjenbrukes som ferdige svar i demomodus.
 - Kun fiktive CV-er i repoet; aldri ekte personopplysninger.
-
-## Åpne spørsmål videreført fra samtalen
-
-- Gruppestørrelse er avklart (soloprosjekt). Endelig innleveringsfrist for applikasjonen er fortsatt uklar.
