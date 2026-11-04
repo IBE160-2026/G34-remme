@@ -2,7 +2,7 @@
 title: "Addendum: CV & Jobb applikasjonsassistent"
 status: draft
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-11-04
 ---
 
 # Addendum
@@ -30,15 +30,22 @@ Utfyllende bakgrunn og tekniske betraktninger som ikke hører hjemme i selve bri
 
 ## Tekniske betraktninger for input-håndtering
 
-Omfanget inkluderer tre ulike inntaksformer for stillingsannonsen, med ulik teknisk kompleksitet:
+Oppdatert 2026-11-04: v1 bruker kun innlimt tekst for både CV og annonse (etter tilbakemelding fra faglærer). Lenke, bilde og PDF er flyttet til v2. Vurderingene under gjelder derfor v2:
 - **Lenke** — krever skraping av ekstern side (varierende HTML-struktur, mulig behov for headless-rendering, robots.txt-hensyn).
 - **Limt inn tekst** — enklest, ingen ekstern avhengighet.
 - **Bilde/skjermutklipp** — krever OCR eller en bildeforstående modell før annonsen kan analyseres.
 
 CV kan lastes opp som tekst eller PDF — PDF krever tekstuttrekk (og potensielt layout-håndtering hvis CV-en er visuelt formatert i kolonner e.l.).
 
-Disse er implementasjonsdetaljer som bør vurderes nærmere i arkitektur-/PRD-arbeidet, ikke avgjort her.
+Disse er implementasjonsdetaljer som bør vurderes nærmere når v2 planlegges.
+
+## Testsett (grunnlag for PRD og testing)
+
+- 5 ekte, offentlige trainee-annonser med må- og bør-krav notert på forhånd.
+- 3 fiktive CV-er for studenter i siste studieår, med fasit (truffet / delvis / mangler) per krav per annonse.
+- Én eller to av fasit-casene gjenbrukes som ferdige svar i demomodus.
+- Kun fiktive CV-er i repoet; aldri ekte personopplysninger.
 
 ## Åpne spørsmål videreført fra samtalen
 
-- Konkret innleveringsfrist og gruppestørrelse for kursprosjektet — ikke avklart med bruker. Påvirker realistisk omfang.
+- Gruppestørrelse er avklart (soloprosjekt). Endelig innleveringsfrist for applikasjonen er fortsatt uklar.
