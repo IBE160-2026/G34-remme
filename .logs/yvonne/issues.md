@@ -6,7 +6,7 @@
 - [x] 2026-11-04 [product-brief-oppdatering](999-2026-11-04-19-46-58-product-brief-oppdatering.md) — Find out the final deadline for the application (løst 2026-11-04: 15.12.2026 kl. 15:00)
 - [x] 2026-11-04 [product-brief-oppdatering](999-2026-11-04-19-46-58-product-brief-oppdatering.md) — Next step in BMAD: create the PRD (løst 2026-11-04, see [prd](997-2026-11-04-21-30-00-prd.md))
 - [ ] 2026-11-04 [prd](997-2026-11-04-21-30-00-prd.md) — Architecture with `bmad-architecture` after UX
-- [ ] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — Bekreft kostnadskravet «maks 2 kr per analyse» i PRD §5
+- [x] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — Bekreft kostnadskravet «maks 2 kr per analyse» i PRD §5 (løst 2026-11-15)
 - [ ] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD-tilbakemelding 4.3: målbar grense for SM-C1, flytt SM-C2 til FR-6/FR-9 (før testplanen)
 - [ ] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD-tilbakemelding 4.5: maks inputlengde, presisere FR-3, FR-17, FR-4
 - [ ] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD: SM-4 gjelder FR-8 «hvis FR-8 er med»
