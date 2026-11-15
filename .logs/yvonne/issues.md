@@ -12,3 +12,4 @@
 - [x] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD: SM-4 gjelder FR-8 «hvis FR-8 er med» (løst 2026-11-15)
 - [ ] 2026-11-15 [impeccable-installasjon](995-2026-11-15-12-22-36-impeccable-installasjon.md) — Avklar om Impeccable (`.claude/skills/impeccable/`, ca. 24 MB med binærfil, og `.claude/agents/`) skal committes for gruppen
 - [ ] 2026-11-15 [impeccable-installasjon](995-2026-11-15-12-22-36-impeccable-installasjon.md) — Kjør `/impeccable init` etter omstart av Claude Code, før `bmad-ux`
+- [ ] 2026-11-15 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Vurder de 10 UX-konseptene (`ux-designs/ux-G34-remme-2026-11-15/.working/konsepter.html`) og velg retning å drille videre i
