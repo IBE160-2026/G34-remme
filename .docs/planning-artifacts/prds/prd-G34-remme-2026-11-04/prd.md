@@ -87,6 +87,7 @@ Brukeren kan lime inn en CV i feltet «Lim inn CV her:» og en annonse i feltet 
 **Konsekvenser (testbare):**
 - Siden viser hjelpeteksten «Bare en CV og en annonse per analyse».
 - «Analyser» er deaktivert så lenge ett av feltene er tomt eller bare inneholder mellomrom.
+- Hvert felt godtar maks 15 000 tegn. Er teksten lengre, vises «Teksten er for lang», og «Analyser» er deaktivert.
 
 #### FR-2: Teksten beholdes i fanen
 
@@ -100,10 +101,10 @@ Feltene beholder innholdet så lenge nettleserfanen er åpen, slik at brukeren k
 
 #### FR-3: Personvernvarsel
 
-Inputsiden opplyser at CV-en sendes til en ekstern språkmodell for analyse og ikke lagres.
+Inputsiden opplyser at CV-en sendes til en ekstern språkmodell for analyse, og at appen ikke lagrer den. Realiserer UJ-1.
 
 **Konsekvenser (testbare):**
-- Inputsiden viser «CV-en din sendes til Claude for analyse og lagres ikke.» før brukeren trykker «Analyser».
+- Inputsiden viser «CV-en din sendes til Claude for analyse. Appen lagrer den ikke.» før brukeren trykker «Analyser».
 
 ### 4.2 Analyse
 
@@ -116,7 +117,8 @@ Appen trekker ut alle krav fra annonsen og merker hvert som må-krav eller bør-
 **Konsekvenser (testbare):**
 - Et enten-eller-krav blir ett krav, ikke to.
 - Typen avgjøres av ordene i annonsen (se §3 Må-krav og Bør-krav). Krav uten slike ord blir bør-krav.
-- Målet er å ikke gå glipp av krav. Et ekstra krav er en mindre feil enn et manglende (se SM-2).
+- Målet er å ikke gå glipp av krav. Et ekstra krav er en mindre feil enn et manglende.
+- Dekningen måles med SM-2.
 
 #### FR-5: Status med sitat
 
@@ -134,6 +136,7 @@ Appen gir et forbedringshint for hvert krav som er delvis truffet eller mangler.
 - Hintet viser til innhold som allerede finnes i CV-en, og sier om det bør formuleres tydeligere eller flyttes høyere opp.
 - Hintet inneholder ikke ferdig omskrevne setninger.
 - Finnes det ikke noe relevant i CV-en for et krav som mangler, sier hintet det rett ut, uten å foreslå å legge til erfaring.
+- Hvert krav med status delvis truffet eller mangler har et forbedringshint som ikke er tomt. Mangler hintet, er resultatet feil, selv om scoren og statusene er riktige. Testes automatisk på lagrede modellsvar.
 
 #### FR-7: Match-score
 
@@ -179,7 +182,7 @@ Resultatsiden viser match-scoren øverst, deretter kravene som er truffet, så d
 **Konsekvenser (testbare):**
 - Hvert krav er merket som må-krav eller bør-krav. Innenfor hver status kommer må-kravene før bør-kravene.
 - Krav som er truffet eller delvis truffet, viser sitatet.
-- Krav som er delvis truffet eller mangler, viser forbedringshintet.
+- Krav som er delvis truffet eller mangler, viser forbedringshintet. Ingen slike krav vises uten hint (se FR-6).
 - Den potensielle scoren vises under match-scoren hvis FR-8 er med.
 
 #### FR-10: Godt treff
@@ -252,7 +255,10 @@ I demomodus fyller knappen «Bruk eksempel» feltene med eksempeldata. «Analyse
 
 #### FR-17: Egen tekst i demomodus
 
-Limer brukeren inn egen tekst i demomodus og trykker «Analyser», viser appen «Ekte analyse krever API-nøkkel – se README» i stedet for et resultat.
+Limer brukeren inn egen tekst i demomodus og trykker «Analyser», viser appen «Ekte analyse krever API-nøkkel – se README» i stedet for et resultat. Realiserer UJ-2.
+
+**Konsekvenser (testbare):**
+- Er feltene ikke helt identiske med eksempeldataene, regnes teksten som egen tekst. Det gjelder også når brukeren bare har endret ett tegn.
 
 ## 5. Tverrgående krav
 
@@ -262,6 +268,7 @@ Limer brukeren inn egen tekst i demomodus og trykker «Analyser», viser appen �
 - **Språkmodell og kostnad:** analysen bruker en Claude-modell via Anthropics API. Kravet er kostnaden: en analyse skal koste maks 2 kr. Hvilken modell som brukes, er et arkitekturvalg. Kostnadsanslaget er regnet med Claude Opus 5.5: 0,50–2,00 kr per analyse, 10–40 kr for en testrunde på 20 analyser, og 60–300 kr for prompt-utvikling (100–200 kjøringer).
 - **Testing:** automatiske tester av FR-5, FR-7, FR-10, FR-11 og FR-14 kjøres mot faste, lagrede modellsvar (også ugyldige), og bruker ikke API-nøkkel. De gir samme svar hver gang og koster ingenting. Testsettet i §7.1 kjøres manuelt mot den ekte modellen, og resultatet noteres.
 - **Ytelse:** en analyse tar vanligvis 15–30 sekunder. Tidsgrensen er 60 sekunder (FR-14).
+- **Inputlengde:** hvert felt godtar maks 15 000 tegn (FR-1), slik at kostnaden og svartiden holder seg innenfor anslagene.
 - **Personvern:** CV- og annonsetekst lagres ikke på serveren eller i filer (FR-2), og brukeren får beskjed om at CV-en sendes til Claude (FR-3). `.env` er utenfor Git. Repoet inneholder bare fiktive CV-er. Testannonsene kan være ekte, offentlige annonser.
 
 ## 6. Ikke-mål
@@ -299,12 +306,13 @@ Limer brukeren inn egen tekst i demomodus og trykker «Analyser», viser appen �
 - **SM-3: Status.** For 3 fiktive CV-er testet mot annonsene, med fasit skrevet på forhånd, får minst 70 % av kravene riktig status. Et må-krav som mangler, får aldri status truffet. Validerer FR-5.
 
 **Sekundære**
-- **SM-4: Scoreberegning.** Automatiske tester av formelen med faste kravlister består, inkludert grensetilfellene i FR-7. Validerer FR-7 og FR-8.
+- **SM-4: Scoreberegning.** Automatiske tester av formelen med faste kravlister består, inkludert grensetilfellene i FR-7. Validerer FR-7, og FR-8 hvis FR-8 er med.
 - **SM-5: Brukeren.** En medstudent som får en fiktiv CV og en annonse, kan ut fra resultatsiden alene og uten hjelp peke på minst 1 konkret endring i CV-en innen 5 minutter, og se hvilke må-krav og bør-krav som er truffet eller mangler. Validerer FR-6 og FR-9.
 
 **Mot-mål (skal ikke optimaliseres)**
-- **SM-C1: Få sitater.** Appen skal ikke nå SM-1 ved å sitere lite eller markere for få krav som truffet. Antall truffede krav sammenlignes med fasiten i SM-3. Motvekt til SM-1.
-- **SM-C2: Manglende hint.** Et resultat der krav som er delvis truffet eller mangler, ikke har forbedringshint, er en feil, selv om scoren og statusene er riktige. Motvekt til SM-1 og SM-3.
+- **SM-C1: Få sitater.** Appen skal ikke nå SM-1 ved å sitere lite eller markere for få krav som truffet. Mål: summert over de 3 CV-ene i SM-3 avviker antall krav appen markerer som truffet, med maks 20 % fra fasiten, i begge retninger. Motvekt til SM-1 og SM-3.
+
+*Regelen om at alle krav som er delvis truffet eller mangler, skal ha forbedringshint (tidligere SM-C2), er flyttet til FR-6 og FR-9.*
 
 ## 9. Åpne spørsmål og antakelser
 
