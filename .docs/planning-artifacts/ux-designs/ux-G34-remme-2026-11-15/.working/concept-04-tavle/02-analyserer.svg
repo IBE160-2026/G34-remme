@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1534" viewBox="0 0 1440 1534" role="img" aria-label="Konsept 04 Tavle – Analyserer">
+<title>Konsept 04 Tavle – Analyserer</title>
+<defs>
+  <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#F7EACB"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#D4951C" stroke-width="2.4"/>
+  </pattern>
+  <pattern id="demohatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="10" height="10" fill="#1C1E1B"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#34372F" stroke-width="5"/>
+  </pattern>
+  <filter id="lift" x="-10%" y="-10%" width="120%" height="140%">
+    <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#3B2F1E" flood-opacity="0.10"/>
+  </filter>
+</defs>
+<rect x="0" y="0" width="1440" height="1534" rx="0" fill="#F3EFE6"/>
+<rect x="0" y="0" width="1440" height="64" rx="0" fill="#F3EFE6"/>
+<line x1="0" y1="64" x2="1440" y2="64" stroke="#D9D1C1" stroke-width="1"/>
+<rect x="80" y="23.0" width="5" height="18" rx="1.5" fill="#2E6B3F"/>
+<rect x="87" y="27.0" width="5" height="14" rx="1.5" fill="#D4951C"/>
+<rect x="94" y="31.0" width="5" height="10" rx="1.5" fill="#C2410C"/>
+<text x="110" y="38.0" font-family="'Segoe UI Variable Display','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" fill="#1C1E1B" text-anchor="start" letter-spacing="-0.2">CV &amp; Jobb</text>
+<text x="202.15" y="38.0" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" fill="#5E6058" text-anchor="start">applikasjonsassistent</text>
+<text x="80" y="142" font-family="'Segoe UI Variable Display','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#1C1E1B" text-anchor="start" letter-spacing="-1.2">Se hvor godt CV-en din</text>
+<text x="80" y="196" font-family="'Segoe UI Variable Display','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#1C1E1B" text-anchor="start" letter-spacing="-1.2">treffer annonsen.</text>
+<text x="80" y="244" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="400" fill="#45483F" text-anchor="start">Lim inn CV-en din og én stillingsannonse. Appen trekker ut kravene</text>
+<text x="80" y="272" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="400" fill="#45483F" text-anchor="start">og legger hvert krav på en tavle: truffet, delvis truffet eller</text>
+<text x="80" y="300" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="400" fill="#45483F" text-anchor="start">mangler. Du ser scoren, og hva du kan formulere tydeligere.</text>
+<path d="M802.5714285714286 119.64285714285714 l4.371428571428572 4.371428571428572 l8.485714285714286 -9.514285714285716" fill="none" stroke="#2E6B3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="832" y="124" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="600" fill="#1C1E1B" text-anchor="start">Aldri finn på erfaring</text>
+<text x="832" y="150" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" fill="#45483F" text-anchor="start">Hintene peker på det som allerede står i CV-en. Appen skriver ikke</text>
+<text x="832" y="172" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" fill="#45483F" text-anchor="start">setninger for deg.</text>
+<line x1="800" y1="192" x2="1360" y2="192" stroke="#D9D1C1" stroke-width="1"/>
+<circle cx="809.0" cy="217.0" r="8.0" fill="none" stroke="#8A5500" stroke-width="1.8"/><path d="M809.0 209.0 a8.0 8.0 0 0 1 0 16.0 z" fill="#8A5500"/>
+<text x="832" y="222" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="600" fill="#1C1E1B" text-anchor="start">Sitater som bevis</text>
+<text x="832" y="248" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" fill="#45483F" text-anchor="start">Hvert truffet krav viser et ordrett sitat fra CV-en. Finnes ikke</text>
+<text x="832" y="270" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" fill="#45483F" text-anchor="start">sitatet, regnes kravet som mangler.</text>
+<line x1="800" y1="290" x2="1360" y2="290" stroke="#D9D1C1" stroke-width="1"/>
+<circle cx="809.0" cy="315.0" r="8.0" fill="none" stroke="#565B65" stroke-width="1.8" stroke-dasharray="3 2.2"/>
+<text x="832" y="320" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="600" fill="#1C1E1B" text-anchor="start">Én annonse om gangen</text>
+<text x="832" y="346" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" fill="#45483F" text-anchor="start">Bruk den samme CV-en mot flere annonser, én etter én.</text>
+<rect x="80" y="414" width="1280" height="618" rx="14" fill="#FFFDF8" stroke="#D9D1C1" stroke-width="1" filter="url(#lift)"/>
+<g fill="none" stroke="#45483F" stroke-width="1.8" stroke-linecap="round"><circle cx="120" cy="452" r="7"/><path d="M120 448.5 v4.5"/></g><circle cx="120" cy="455.6" r="1.1" fill="#45483F"/>
+<text x="136" y="458" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1C1E1B" text-anchor="start">Bare en CV og en annonse per analyse</text>
+<text x="112" y="506" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1C1E1B" text-anchor="start">Lim inn CV her:</text>
+<rect x="112" y="518" width="592.0" height="400" rx="8" fill="#FFFDF8" stroke="#C9BFAC" stroke-width="1.2"/>
+<text x="128" y="544" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Yvonne Halvorsen</text>
+<text x="128" y="566" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Utdanning</text>
+<text x="128" y="588" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Bachelor i IT og informasjonssystemer, Høgskolen i Molde</text>
+<text x="128" y="610" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">(5. semester av 6, ferdig våren 2027)</text>
+<text x="128" y="632" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Prosjekter</text>
+<text x="128" y="654" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Utviklet en webapp i Python med en gruppe på fire.</text>
+<text x="128" y="676" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Laget SQL-spørringer for et lagerregister i faget Databaser.</text>
+<text x="128" y="698" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Brukte regneark i et kursprosjekt om budsjett.</text>
+<text x="128" y="720" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Erfaring</text>
+<text x="128" y="742" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Butikkmedarbeider i dagligvarehandel, 2021–2024.</text>
+<text x="128" y="764" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Hadde ansvar for opplæring av nye ansatte.</text>
+<text x="128" y="786" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Språk</text>
+<text x="128" y="808" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Norsk (morsmål), engelsk (flytende)</text>
+<text x="690.0" y="906" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#5E6058" text-anchor="end" font-variant-numeric="tabular-nums">434 / 15 000</text>
+<text x="736.0" y="506" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#1C1E1B" text-anchor="start">Lim inn annonse her:</text>
+<rect x="736.0" y="518" width="592.0" height="400" rx="8" fill="#FFFDF8" stroke="#C9BFAC" stroke-width="1.2"/>
+<text x="752.0" y="544" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Trainee – digitalisering, Nordvik Kraft AS</text>
+<text x="752.0" y="566" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Vi søker nyutdannede som vil jobbe med data og digitale løsninger.</text>
+<text x="752.0" y="588" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Krav</text>
+<text x="752.0" y="610" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Bachelorgrad innen IT, økonomi eller tilsvarende.</text>
+<text x="752.0" y="632" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Du må ha erfaring med dataanalyse og SQL.</text>
+<text x="752.0" y="654" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Vi forventer gode norsk- og engelskkunnskaper, muntlig og skriftlig.</text>
+<text x="752.0" y="676" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Førerkort klasse B er nødvendig.</text>
+<text x="752.0" y="698" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#1C1E1B" text-anchor="start">Ønskelig</text>
+<text x="752.0" y="720" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Erfaring med Python eller et annet programmeringsspråk.</text>
+<text x="752.0" y="742" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Erfaring med kundeservice er en fordel. Gjerne erfaring med Excel.</text>
+<text x="752.0" y="764" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#45483F" text-anchor="start">Kjennskap til Power BI er et pluss. Interesse for energibransjen.</text>
+<text x="1314.0" y="906" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#5E6058" text-anchor="end" font-variant-numeric="tabular-nums">506 / 15 000</text>
+<line x1="112" y1="938" x2="1328" y2="938" stroke="#D9D1C1" stroke-width="1"/>
+<g fill="none" stroke="#45483F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="112" y="960" width="12" height="9" rx="2"/><path d="M115 960 v-2.5 a3 3 0 0 1 6 0 v2.5"/></g>
+<text x="134" y="972" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="500" fill="#45483F" text-anchor="start">CV-en din sendes til Claude for analyse. Appen lagrer den ikke.</text>
+<rect x="1132" y="948" width="196" height="52" rx="8" fill="#E3DED3"/>
+<text x="1230.0" y="980.12" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#5C584F" text-anchor="middle">Analyser</text>
+<text x="872" y="970" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1C1E1B" text-anchor="start">Analyserer …</text>
+<rect x="872" y="982" width="220" height="6" rx="3" fill="#FBE7DC"/>
+<rect x="912" y="982" width="90" height="6" rx="3" fill="#C2410C"/>
+<text x="872" y="1008" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#5E6058" text-anchor="start">Vanligvis 15–30 sekunder</text>
+<rect x="80.0" y="1072" width="405.3333333333333" height="4" rx="2" fill="#C9BFAC"/>
+<text x="80.0" y="1107" font-family="'Segoe UI Variable Display','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="700" fill="#5E6058" text-anchor="start">Truffet</text>
+<rect x="80.0" y="1132" width="405.3333333333333" height="116" rx="10" fill="none" stroke="#C9BFAC" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="98.0" y="1152" width="74" height="20" rx="4" fill="#E3DED3"/>
+<rect x="98.0" y="1186" width="283.7333333333333" height="12" rx="4" fill="#E3DED3"/>
+<rect x="98.0" y="1208" width="182.4" height="12" rx="4" fill="#E3DED3"/>
+<rect x="80.0" y="1264" width="405.3333333333333" height="116" rx="10" fill="none" stroke="#C9BFAC" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="98.0" y="1284" width="74" height="20" rx="4" fill="#E3DED3"/>
+<rect x="98.0" y="1318" width="283.7333333333333" height="12" rx="4" fill="#E3DED3"/>
+<rect x="98.0" y="1340" width="182.4" height="12" rx="4" fill="#E3DED3"/>
+<rect x="517.3333333333333" y="1072" width="405.3333333333333" height="4" rx="2" fill="#C9BFAC"/>
+<text x="517.3333333333333" y="1107" font-family="'Segoe UI Variable Display','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="700" fill="#5E6058" text-anchor="start">Delvis truffet</text>
+<rect x="517.3333333333333" y="1132" width="405.3333333333333" height="116" rx="10" fill="none" stroke="#C9BFAC" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="535.3333333333333" y="1152" width="74" height="20" rx="4" fill="#E3DED3"/>
+<rect x="535.3333333333333" y="1186" width="283.7333333333333" height="12" rx="4" fill="#E3DED3"/>
+<rect x="535.3333333333333" y="1208" width="182.4" height="12" rx="4" fill="#E3DED3"/>
+<rect x="517.3333333333333" y="1264" width="405.3333333333333" height="116" rx="10" fill="none" stroke="#C9BFAC" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="535.3333333333333" y="1284" width="74" height="20" rx="4" fill="#E3DED3"/>
+<rect x="535.3333333333333" y="1318" width="283.7333333333333" height="12" rx="4" fill="#E3DED3"/>
+<rect x="535.3333333333333" y="1340" width="182.4" height="12" rx="4" fill="#E3DED3"/>
+<rect x="954.6666666666666" y="1072" width="405.3333333333333" height="4" rx="2" fill="#C9BFAC"/>
+<text x="954.6666666666666" y="1107" font-family="'Segoe UI Variable Display','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="700" fill="#5E6058" text-anchor="start">Mangler</text>
+<rect x="954.6666666666666" y="1132" width="405.3333333333333" height="116" rx="10" fill="none" stroke="#C9BFAC" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="972.6666666666666" y="1152" width="74" height="20" rx="4" fill="#E3DED3"/>
+<rect x="972.6666666666666" y="1186" width="283.7333333333333" height="12" rx="4" fill="#E3DED3"/>
+<rect x="972.6666666666666" y="1208" width="182.4" height="12" rx="4" fill="#E3DED3"/>
+<rect x="954.6666666666666" y="1264" width="405.3333333333333" height="116" rx="10" fill="none" stroke="#C9BFAC" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="972.6666666666666" y="1284" width="74" height="20" rx="4" fill="#E3DED3"/>
+<rect x="972.6666666666666" y="1318" width="283.7333333333333" height="12" rx="4" fill="#E3DED3"/>
+<rect x="972.6666666666666" y="1340" width="182.4" height="12" rx="4" fill="#E3DED3"/>
+<text x="720" y="1424" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="500" fill="#5E6058" text-anchor="middle">Kravene legges på tavla når analysen er ferdig.</text>
+<line x1="80" y1="1472" x2="1360" y2="1472" stroke="#D9D1C1" stroke-width="1"/>
+<text x="80" y="1502" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#5E6058" text-anchor="start">Laget av gruppe G34, IBE160</text>
+<text x="1360" y="1502" font-family="'Segoe UI Variable Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#5E6058" text-anchor="end">Ingen innlogging. Ingenting lagres.</text>
+</svg>

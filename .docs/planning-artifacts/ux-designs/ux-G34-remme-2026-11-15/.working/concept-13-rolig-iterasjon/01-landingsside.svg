@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1902" viewBox="0 0 1440 1902" role="img" lang="nb">
+<title>Konsept 13 – Landingsside og input, steg 1</title>
+<desc>Presentasjon av konseptet Rolig iterasjon, landingssiden med steg 1 (CV) åpent, og samme side i steg 3 der ferdige steg er slått sammen med Endre.</desc>
+<rect width="1440" height="1902" fill="#F6F1E9"/>
+<rect x="0.0" y="0.0" width="1440.0" height="300.0" rx="0" fill="#E9EEF2"/>
+<text x="120.0" y="62.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="34" font-weight="400" fill="#3E5468">Konsept 13 – Rolig iterasjon</text>
+<text x="120.0" y="100.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#3E5468">Utseendet fra «Rolig rådgiver» (01) og flyten fra «Ett steg om gangen» (09). Ett steg om gangen er fortsatt grunnprinsippet, men tre ting er nye:</text>
+<line x1="120.0" y1="162.0" x2="490.0" y2="162.0" stroke="#3E5468" stroke-width="1"/>
+<text x="120.0" y="194.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="19" font-weight="400" fill="#3E5468">Alle kravene på ett blikk</text>
+<text x="120.0" y="222.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">Oversikten lister alle sju kravene i rekkefølge, så gapene ses</text>
+<text x="120.0" y="243.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">uten ett eneste klikk.</text>
+<line x1="530.0" y1="162.0" x2="900.0" y2="162.0" stroke="#3E5468" stroke-width="1"/>
+<text x="530.0" y="194.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="19" font-weight="400" fill="#3E5468">CV-en ved siden av</text>
+<text x="530.0" y="222.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">I hvert fokusert trinn kan CV-en vises til høyre, med</text>
+<text x="530.0" y="243.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">sitatene markert der de står.</text>
+<line x1="940.0" y1="162.0" x2="1310.0" y2="162.0" stroke="#3E5468" stroke-width="1"/>
+<text x="940.0" y="194.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="19" font-weight="400" fill="#3E5468">Prøv igjen på ett klikk</text>
+<text x="940.0" y="222.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">«Lim inn oppdatert CV og analyser på nytt» beholder</text>
+<text x="940.0" y="243.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">annonsen og viser forrige score i fanen.</text>
+<text x="120.0" y="345.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="22" font-weight="400" fill="#2A2420">CV-assistenten</text>
+<text x="282.0" y="345.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">for deg som søker første jobb</text>
+<text x="1320.0" y="345.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#5E544B" text-anchor="end">Ingen innlogging</text>
+<line x1="120.0" y1="372.0" x2="1320.0" y2="372.0" stroke="#D4C9BA" stroke-width="1"/>
+<text x="120.0" y="450.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="48" font-weight="400" fill="#2A2420">Se hvor godt CV-en</text>
+<text x="120.0" y="508.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="48" font-weight="400" fill="#2A2420">din treffer akkurat</text>
+<text x="120.0" y="566.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="48" font-weight="400" fill="#2A2420">denne annonsen.</text>
+<text x="120.0" y="616.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#2A2420">Lim inn CV-en din og én stillingsannonse. Du får en</text>
+<text x="120.0" y="644.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#2A2420">match-score og en rolig gjennomgang av kravene, ett</text>
+<text x="120.0" y="672.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#2A2420">steg om gangen.</text>
+<line x1="120.0" y1="712.0" x2="520.0" y2="712.0" stroke="#D4C9BA" stroke-width="1"/>
+<text x="120.0" y="756.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="20" font-weight="400" fill="#2A2420">Ett steg om gangen.</text>
+<text x="120.0" y="782.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Først CV-en, så annonsen. Ferdige steg legger seg sammen,</text>
+<text x="120.0" y="806.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">så bare ett felt krever oppmerksomhet.</text>
+<text x="120.0" y="850.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="20" font-weight="400" fill="#2A2420">Sitater som bevis.</text>
+<text x="120.0" y="876.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Hvert treff viser hvor i CV-en det står, markert i teksten din.</text>
+<text x="120.0" y="920.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="20" font-weight="400" fill="#2A2420">Lett å prøve igjen.</text>
+<text x="120.0" y="946.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Rediger CV-en, lim den inn på nytt og se forrige score ved</text>
+<text x="120.0" y="970.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">siden av den nye.</text>
+<line x1="740.0" y1="440.0" x2="958.0" y2="440.0" stroke="#D4C9BA" stroke-width="1"/>
+<line x1="1002.0" y1="440.0" x2="1220.0" y2="440.0" stroke="#D4C9BA" stroke-width="1"/>
+<circle cx="718.0" cy="440.0" r="16" fill="#FFFDF9" stroke="#2A2420" stroke-width="2"/>
+<text x="718.0" y="445.5" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#2A2420" text-anchor="middle">1</text>
+<text x="718.0" y="482.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2A2420" text-anchor="middle">CV</text>
+<circle cx="980.0" cy="440.0" r="16" fill="#F6F1E9" stroke="#D4C9BA" stroke-width="1.5"/>
+<text x="980.0" y="445.5" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#5E544B" text-anchor="middle">2</text>
+<text x="980.0" y="482.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B" text-anchor="middle">Annonse</text>
+<circle cx="1242.0" cy="440.0" r="16" fill="#F6F1E9" stroke="#D4C9BA" stroke-width="1.5"/>
+<text x="1242.0" y="445.5" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#5E544B" text-anchor="middle">3</text>
+<text x="1242.0" y="482.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B" text-anchor="middle">Analyser</text>
+<circle cx="654.0" cy="530.0" r="14" fill="#2A2420"/>
+<text x="654.0" y="535.5" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#F6F1E9" text-anchor="middle">1</text>
+<text x="680.0" y="536.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#2A2420">Lim inn CV her:</text>
+<rect x="640.5" y="556.5" width="679.0" height="249.0" rx="4" fill="#FFFDF9" stroke="#2A2420" stroke-width="1.5"/>
+<text x="658.0" y="588.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2A2420">Yvonne Berg</text>
+<text x="658.0" y="612.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">Bachelor i IT og informasjonssystemer, Høgskolen i Molde (2024–2027)</text>
+<text x="658.0" y="636.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">Ferdigheter: Excel (avansert), pivottabeller og XOPPSLAG</text>
+<text x="658.0" y="660.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">SQL (grunnleggende), Python</text>
+<text x="658.0" y="684.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">Erfaring: Butikkmedarbeider, Coop Extra Molde, deltid 2022–</text>
+<text x="658.0" y="708.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">Prosjekter: Lagde grafer i Python for et kursprosjekt om kollektivtrafikk</text>
+<text x="658.0" y="732.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">Presenterte gruppeprosjektet for medstudenter og faglærer</text>
+<text x="1302.0" y="790.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#5E544B" text-anchor="end">357 / 15 000 tegn</text>
+<circle cx="648.0" cy="835.0" r="8" fill="none" stroke="#5E544B" stroke-width="1.5"/>
+<line x1="648.0" y1="834.0" x2="648.0" y2="839.0" stroke="#5E544B" stroke-width="1.5"/>
+<circle cx="648.0" cy="831.0" r="1" fill="#5E544B"/>
+<text x="664.0" y="840.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Bare en CV og en annonse per analyse</text>
+<rect x="1110.0" y="824.0" width="210.0" height="52.0" rx="4" fill="#2A2420"/>
+<text x="1215.0" y="855.8" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#F6F1E9" text-anchor="middle">Neste: Annonse</text>
+<path d="M1295.5,845 L1300.5,850 L1295.5,855" fill="none" stroke="#F6F1E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="640.0" y1="906.0" x2="1320.0" y2="906.0" stroke="#E6DDD0" stroke-width="1"/>
+<circle cx="656.0" cy="938.0" r="13" fill="#F6F1E9" stroke="#D4C9BA" stroke-width="1.5"/>
+<text x="656.0" y="943.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#5E544B" text-anchor="middle">2</text>
+<text x="682.0" y="943.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#5E544B">Lim inn annonse her:</text>
+<line x1="640.0" y1="970.0" x2="1320.0" y2="970.0" stroke="#E6DDD0" stroke-width="1"/>
+<circle cx="656.0" cy="1002.0" r="13" fill="#F6F1E9" stroke="#D4C9BA" stroke-width="1.5"/>
+<text x="656.0" y="1007.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#5E544B" text-anchor="middle">3</text>
+<text x="682.0" y="1007.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#5E544B">Analyser</text>
+<line x1="640.0" y1="1034.0" x2="1320.0" y2="1034.0" stroke="#E6DDD0" stroke-width="1"/>
+<rect x="640.0" y="1071.0" width="14.0" height="10.0" rx="2" fill="none" stroke="#2A2420" stroke-width="1.5"/>
+<path d="M643,1071 V1068.5 a4,4 0 0 1 8,0 V1071" fill="none" stroke="#2A2420" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="664.0" y="1078.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">CV-en din sendes til Claude for analyse. Appen lagrer den ikke.</text>
+<text x="664.0" y="1104.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#5E544B">Feltet beholder teksten så lenge fanen er åpen.</text>
+<line x1="120.0" y1="1174.0" x2="1320.0" y2="1174.0" stroke="#D4C9BA" stroke-width="1"/>
+<text x="120.0" y="1204.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#5E544B">Laget av gruppe G34, IBE160</text>
+<text x="1320.0" y="1204.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#5E544B" text-anchor="end">Ingen innlogging. CV og annonse lagres ikke.</text>
+<rect x="0.0" y="1244.0" width="1440.0" height="92.0" rx="0" fill="#E9EEF2"/>
+<text x="120.0" y="1278.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="20" font-weight="400" fill="#3E5468">Samme side, steg 3 av 3: ferdige steg er slått sammen</text>
+<text x="120.0" y="1304.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#3E5468">Bare det som gjenstår, er åpent. «Endre» åpner et ferdig felt igjen, og teksten står der fortsatt.</text>
+<line x1="740.0" y1="1406.0" x2="958.0" y2="1406.0" stroke="#2A2420" stroke-width="1.5"/>
+<line x1="1002.0" y1="1406.0" x2="1220.0" y2="1406.0" stroke="#2A2420" stroke-width="1.5"/>
+<circle cx="718.0" cy="1406.0" r="16" fill="#2A2420"/>
+<path d="M713.0,1406 L716.5,1409.5 L723.0,1402" fill="none" stroke="#F6F1E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="718.0" y="1448.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420" text-anchor="middle">CV</text>
+<circle cx="980.0" cy="1406.0" r="16" fill="#2A2420"/>
+<path d="M975.0,1406 L978.5,1409.5 L985.0,1402" fill="none" stroke="#F6F1E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="980.0" y="1448.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420" text-anchor="middle">Annonse</text>
+<circle cx="1242.0" cy="1406.0" r="16" fill="#FFFDF9" stroke="#2A2420" stroke-width="2"/>
+<text x="1242.0" y="1411.5" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#2A2420" text-anchor="middle">3</text>
+<text x="1242.0" y="1448.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2A2420" text-anchor="middle">Analyser</text>
+<rect x="640.5" y="1486.5" width="679.0" height="71.0" rx="4" fill="#FFFDF9" stroke="#D4C9BA" stroke-width="1"/>
+<circle cx="668.0" cy="1512.0" r="11" fill="#2A2420"/>
+<path d="M664.0,1512 L666.8,1514.8 L672.0,1508.8" fill="none" stroke="#F6F1E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690.0" y="1517.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#2A2420">Lim inn CV her:</text>
+<rect x="1226.8" y="1502.8" width="74.5" height="36.5" rx="4" fill="#FFFDF9" stroke="#2A2420" stroke-width="1.5"/>
+<text x="1264.0" y="1526.4" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2A2420" text-anchor="middle">Endre</text>
+<text x="1210.0" y="1517.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#5E544B" text-anchor="end">357 / 15 000 tegn</text>
+<text x="690.0" y="1541.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Yvonne Berg · Bachelor i IT og informasjonssystemer, Høgskolen i Molde</text>
+<rect x="640.5" y="1570.5" width="679.0" height="71.0" rx="4" fill="#FFFDF9" stroke="#D4C9BA" stroke-width="1"/>
+<circle cx="668.0" cy="1596.0" r="11" fill="#2A2420"/>
+<path d="M664.0,1596 L666.8,1598.8 L672.0,1592.8" fill="none" stroke="#F6F1E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690.0" y="1601.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#2A2420">Lim inn annonse her:</text>
+<rect x="1226.8" y="1586.8" width="74.5" height="36.5" rx="4" fill="#FFFDF9" stroke="#2A2420" stroke-width="1.5"/>
+<text x="1264.0" y="1610.4" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2A2420" text-anchor="middle">Endre</text>
+<text x="1210.0" y="1601.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#5E544B" text-anchor="end">426 / 15 000 tegn</text>
+<text x="690.0" y="1625.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Trainee – økonomi og analyse, Nordvik Kraft AS, Ålesund</text>
+<circle cx="648.0" cy="1677.0" r="8" fill="none" stroke="#5E544B" stroke-width="1.5"/>
+<line x1="648.0" y1="1676.0" x2="648.0" y2="1681.0" stroke="#5E544B" stroke-width="1.5"/>
+<circle cx="648.0" cy="1673.0" r="1" fill="#5E544B"/>
+<text x="664.0" y="1682.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#5E544B">Bare en CV og en annonse per analyse</text>
+<line x1="640.0" y1="1708.0" x2="1320.0" y2="1708.0" stroke="#E6DDD0" stroke-width="1"/>
+<rect x="640.0" y="1745.0" width="14.0" height="10.0" rx="2" fill="none" stroke="#2A2420" stroke-width="1.5"/>
+<path d="M643,1745 V1742.5 a4,4 0 0 1 8,0 V1745" fill="none" stroke="#2A2420" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="664.0" y="1752.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#2A2420">CV-en din sendes til Claude for analyse. Appen lagrer den ikke.</text>
+<rect x="640.0" y="1782.0" width="220.0" height="56.0" rx="4" fill="#2A2420"/>
+<text x="750.0" y="1816.1" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#F6F1E9" text-anchor="middle">Analyser</text>
+<text x="880.0" y="1816.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#5E544B">Begge feltene har tekst, maks 15 000 tegn hver.</text>
+<rect x="120.0" y="1486.0" width="420.0" height="260.0" rx="4" fill="#E9EEF2"/>
+<text x="144.0" y="1522.0" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif" font-size="17" font-weight="400" fill="#3E5468">Knappens to tilstander</text>
+<rect x="144.0" y="1544.0" width="160.0" height="48.0" rx="4" fill="#E4DACB"/>
+<text x="224.0" y="1573.8" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#62584F" text-anchor="middle">Analyser</text>
+<text x="320.0" y="1564.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">Deaktivert: et felt er tomt, bare</text>
+<text x="320.0" y="1583.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">mellomrom eller over 15 000</text>
+<text x="320.0" y="1602.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">tegn.</text>
+<rect x="144.0" y="1626.0" width="160.0" height="48.0" rx="4" fill="#2A2420"/>
+<text x="224.0" y="1655.8" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#F6F1E9" text-anchor="middle">Analyser</text>
+<text x="320.0" y="1646.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">Aktiv: begge feltene har tekst</text>
+<text x="320.0" y="1665.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">innenfor grensen.</text>
+<text x="144.0" y="1712.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">Deaktivert har ingen skygge og egen tekstfarge, ikke bare</text>
+<text x="144.0" y="1731.0" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#3E5468">blekere farge.</text>
+</svg>

@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2542" viewBox="0 0 1440 2542" role="img" aria-label="Konsept 03 – resultatside (debrief)">
+<title>Konsept 03 – resultatside (debrief)</title>
+<defs>
+<filter id="sh" x="-5%" y="-5%" width="110%" height="115%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#4A3B1F" flood-opacity="0.16"/></filter>
+<filter id="shs" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#4A3B1F" flood-opacity="0.14"/></filter>
+</defs>
+<rect width="1440" height="2542" fill="#ECE6D9"/>
+<rect x="0" y="0" width="1440" height="64" fill="#ECE6D9"/><text x="80" y="40" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="18" fill="#26231F" font-weight="700" >CV &amp; Jobb</text>
+<text x="196" y="40" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="16" fill="#5F5A51" font-style="italic">applikasjonsassistent</text>
+<text x="1360" y="40" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" text-anchor="end" >Ingen innlogging · kjører lokalt</text>
+<path d="M80,63.5 H1360" stroke="#CFC7B6" stroke-width="1"/>
+<rect x="120" y="104" width="1200" height="1954" fill="#FBF8F1" filter="url(#sh)"/>
+<path d="M200,104 V2058" stroke="#DFA096" stroke-width="1.5"/>
+<path d="M926,128 V2034" stroke="#D3DCE9" stroke-width="1" stroke-dasharray="3 6"/>
+<text x="230" y="168" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >Annonse: Trainee – forretningsutvikling og data, Nordvik Kraft AS</text>
+<text x="230" y="192" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >CV: Yvonne Lie</text>
+<text x="230" y="244" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="16" fill="#26231F" font-weight="700" >Match-score</text>
+<text x="236" y="352" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="84" fill="#A8261B" font-weight="700" >62 %</text>
+<path d="M327.0,266 C446.0,263.2 495.0,305.2 488,330.4 C481.0,369.6 376.0,380.8 299.0,375.2 C201.0,366.8 196.79999999999998,310.8 243.0,282.8 C278.0,266.0 341.0,259.28 397.0,260.4" fill="none" stroke="#A8261B" stroke-width="2.6" stroke-linecap="round"/>
+<text x="560" y="244" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="16" fill="#26231F" font-weight="700" >Potensiell score</text>
+<text x="560" y="284" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="22" fill="#26231F" >Du er på 62 %. Fikser du de 3 delvis</text>
+<text x="560" y="316" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="22" fill="#26231F" >truffede kravene, kan du nå</text>
+<text x="844" y="316" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="22" fill="#1F3F8F" font-weight="700" >77 %.</text>
+<path d="M842,324 Q865.2,327 900,323" fill="none" stroke="#1F3F8F" stroke-width="2" stroke-linecap="round"/>
+<path d="M561,351.5 L580,352.6 L579.4,371 L560.4,370.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M564,364 Q567,367 570,372 Q577,357 587,344" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="590" y="368" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="16" fill="#26231F" >4 truffet</text>
+<path d="M705.4,351.5 L724.4,352.6 L723.8,371 L704.8,370.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M708.4,364 Q711.4,367 714.4,372 L719.4,363" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="734.4" y="368" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="16" fill="#26231F" >3 delvis truffet</text>
+<path d="M917.0,351.5 L936.0,352.6 L935.4,371 L916.4,370.3 Z" fill="#FBF8F1" stroke="#A8261B" stroke-width="1.9" stroke-linejoin="round"/>
+<text x="946.0" y="368" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="16" fill="#26231F" >2 mangler</text>
+<text x="950" y="250" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#1F3F8F" >Regnet ut i koden, ikke av KI-en:</text>
+<text x="950" y="276" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#1F3F8F" >8 av 13 poeng.</text>
+<text x="950" y="312" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#1F3F8F" >Må-krav teller dobbelt.</text>
+<path d="M230,414 H1280" stroke="#CFC7B6" stroke-width="1"/>
+<path d="M231,456.5 L256,457.6 L255.4,482 L230.4,481.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M234,469 Q237,472 240,477 Q247,462 263,449" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="274" y="478" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="30" fill="#26231F" font-weight="700" >Truffet</text>
+<text x="418.0" y="476" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >4 krav · CV-en dekker kravet tydelig</text>
+<path d="M230,500 H900" stroke="#26231F" stroke-width="1.2"/>
+<path d="M235,525.5 L256,526.6 L255.4,547 L234.4,546.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,538 Q241,541 244,546 Q251,531 263,518" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274" y="526" width="84" height="24" rx="2" fill="#26231F"/><text x="316.0" y="543" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#FBF8F1" font-weight="700" text-anchor="middle" >må-krav</text>
+<text x="372" y="544" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Bachelorgrad innen IT, økonomi eller tilsvarende</text>
+<text x="274" y="578" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,589 L791.0,588 L793.0,609 L271,610 Z" fill="#F5E6A0"/><text x="274" y="604" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«Bachelor i IT og informasjonssystemer, Høgskolen i Molde</text>
+<path d="M270,615 L386.0,614 L388.0,635 L271,636 Z" fill="#F5E6A0"/><text x="274" y="630" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >(2024–2027)»</text>
+<path d="M235,667.5 L256,668.6 L255.4,689 L234.4,688.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,680 Q241,683 244,688 Q251,673 263,660" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274" y="668" width="84" height="24" rx="2" fill="#26231F"/><text x="316.0" y="685" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#FBF8F1" font-weight="700" text-anchor="middle" >må-krav</text>
+<text x="372" y="686" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Gode norsk- og engelskkunnskaper</text>
+<text x="274" y="720" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,731 L611.0,730 L613.0,751 L271,752 Z" fill="#F5E6A0"/><text x="274" y="746" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«Norsk (morsmål), engelsk (flytende)»</text>
+<path d="M235,783.5 L256,784.6 L255.4,805 L234.4,804.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,796 Q241,799 244,804 Q251,789 263,776" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274.75" y="784.75" width="82.5" height="22.5" rx="2" fill="none" stroke="#26231F" stroke-width="1.5"/><text x="316.0" y="801" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#26231F" font-weight="700" text-anchor="middle" >bør-krav</text>
+<text x="372" y="802" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Programmeringserfaring, gjerne Python</text>
+<text x="274" y="836" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,847 L764.0,846 L766.0,867 L271,868 Z" fill="#F5E6A0"/><text x="274" y="862" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«utviklet en webapp i Python for booking av grupperom»</text>
+<path d="M235,899.5 L256,900.6 L255.4,921 L234.4,920.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,912 Q241,915 244,920 Q251,905 263,892" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274.75" y="900.75" width="82.5" height="22.5" rx="2" fill="none" stroke="#26231F" stroke-width="1.5"/><text x="316.0" y="917" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#26231F" font-weight="700" text-anchor="middle" >bør-krav</text>
+<text x="372" y="918" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Erfaring fra kundeservice</text>
+<text x="274" y="952" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,963 L791.0,962 L793.0,983 L271,984 Z" fill="#F5E6A0"/><text x="274" y="978" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«Deltidsjobb som kundeveileder, Elkjøp Molde (2023–d.d.)»</text>
+<path d="M231,1038.5 L256,1039.6 L255.4,1064 L230.4,1063.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M234,1051 Q237,1054 240,1059 L245,1050" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="274" y="1060" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="30" fill="#26231F" font-weight="700" >Delvis truffet</text>
+<text x="544.0" y="1058" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >3 krav · CV-en nevner noe, men dekker ikke fullt</text>
+<path d="M230,1082 H900" stroke="#26231F" stroke-width="1.2"/>
+<path d="M235,1107.5 L256,1108.6 L255.4,1129 L234.4,1128.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,1120 Q241,1123 244,1128 L249,1119" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274" y="1108" width="84" height="24" rx="2" fill="#26231F"/><text x="316.0" y="1125" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#FBF8F1" font-weight="700" text-anchor="middle" >må-krav</text>
+<text x="372" y="1126" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Erfaring med dataanalyse og visualisering</text>
+<text x="274" y="1160" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,1171 L827.0,1170 L829.0,1191 L271,1192 Z" fill="#F5E6A0"/><text x="274" y="1186" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«Laget enkle rapporter i Power BI i faget Forretningsanalyse»</text>
+<path d="M910,1120 Q926.0,1112.0 942,1120 M933.0,1119.9 L942,1120 L936.5,1112.9" fill="none" stroke="#A8261B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="950" y="1126" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Power BI-rapportene står langt</text>
+<text x="950" y="1152" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >nede under «Prosjekter». Flytt</text>
+<text x="950" y="1178" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >dem høyere opp, og få tydeligere</text>
+<text x="950" y="1204" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >fram hva du analyserte.</text>
+<path d="M235,1241.5 L256,1242.6 L255.4,1263 L234.4,1262.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,1254 Q241,1257 244,1262 L249,1253" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274.75" y="1242.75" width="82.5" height="22.5" rx="2" fill="none" stroke="#26231F" stroke-width="1.5"/><text x="316.0" y="1259" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#26231F" font-weight="700" text-anchor="middle" >bør-krav</text>
+<text x="372" y="1260" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Kjennskap til økonomi og budsjett</text>
+<text x="274" y="1294" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,1305 L728.0,1304 L730.0,1325 L271,1326 Z" fill="#F5E6A0"/><text x="274" y="1320" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«Frivillig kasserer i studentforeningen Pi (2025)»</text>
+<path d="M910,1254 Q926.0,1246.0 942,1254 M933.0,1253.9 L942,1254 L936.5,1246.9" fill="none" stroke="#A8261B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="950" y="1260" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Kassererrollen sier ikke noe om</text>
+<text x="950" y="1286" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >budsjett. Hvis du førte budsjett</text>
+<text x="950" y="1312" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >der, få det tydeligere fram.</text>
+<path d="M235,1357.5 L256,1358.6 L255.4,1379 L234.4,1378.3 Z" fill="#FBF8F1" stroke="#26231F" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M238,1370 Q241,1373 244,1378 L249,1369" fill="none" stroke="#1F3F8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="274.75" y="1358.75" width="82.5" height="22.5" rx="2" fill="none" stroke="#26231F" stroke-width="1.5"/><text x="316.0" y="1375" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#26231F" font-weight="700" text-anchor="middle" >bør-krav</text>
+<text x="372" y="1376" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Smidig prosjektarbeid i team</text>
+<text x="274" y="1410" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra CV-en:</text>
+<path d="M270,1421 L809.0,1420 L811.0,1441 L271,1442 Z" fill="#F5E6A0"/><text x="274" y="1436" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >«Gruppeprosjekt: utviklet en webapp i Python for booking av</text>
+<path d="M270,1447 L512.0,1446 L514.0,1467 L271,1468 Z" fill="#F5E6A0"/><text x="274" y="1462" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#26231F" >grupperom, fire studenter»</text>
+<path d="M910,1370 Q926.0,1362.0 942,1370 M933.0,1369.9 L942,1370 L936.5,1362.9" fill="none" stroke="#A8261B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="950" y="1376" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Teamet står der, men ikke hvordan</text>
+<text x="950" y="1402" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >dere jobbet. Står det mer om</text>
+<text x="950" y="1428" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >arbeidsformen, formuler det</text>
+<text x="950" y="1454" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >tydeligere.</text>
+<path d="M231,1522.5 L256,1523.6 L255.4,1548 L230.4,1547.3 Z" fill="#FBF8F1" stroke="#A8261B" stroke-width="1.9" stroke-linejoin="round"/>
+<text x="274" y="1544" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="30" fill="#26231F" font-weight="700" >Mangler</text>
+<text x="418.0" y="1542" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >2 krav · CV-en nevner ingenting som hører til kravet</text>
+<path d="M230,1566 H900" stroke="#26231F" stroke-width="1.2"/>
+<path d="M235,1591.5 L256,1592.6 L255.4,1613 L234.4,1612.3 Z" fill="#FBF8F1" stroke="#A8261B" stroke-width="1.9" stroke-linejoin="round"/>
+<rect x="274" y="1592" width="84" height="24" rx="2" fill="#26231F"/><text x="316.0" y="1609" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#FBF8F1" font-weight="700" text-anchor="middle" >må-krav</text>
+<text x="372" y="1610" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Kunne SQL</text>
+<text x="274" y="1644" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Sitat fra analysen:</text>
+<text x="274" y="1670" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >«SQL-spørringer mot kundedatabase»</text>
+<path d="M272,1665 Q427.0,1663 582.0,1666" stroke="#A8261B" stroke-width="2" fill="none"/><rect x="274" y="1681" width="310" height="24" fill="none" stroke="#A8261B" stroke-width="1.4"/><text x="284" y="1698" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#A8261B" font-weight="700" >nedgradert av sitatkontrollen</text>
+<text x="274" y="1724" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="15" fill="#3A362F" >Sitatet finnes ikke ordrett i CV-en, så kravet er satt til mangler.</text>
+<path d="M910,1604 Q926.0,1596.0 942,1604 M933.0,1603.9 L942,1604 L936.5,1596.9" fill="none" stroke="#A8261B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="950" y="1610" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Fant ikke belegg i CV-en for</text>
+<text x="950" y="1636" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >dette kravet</text>
+<path d="M235,1761.5 L256,1762.6 L255.4,1783 L234.4,1782.3 Z" fill="#FBF8F1" stroke="#A8261B" stroke-width="1.9" stroke-linejoin="round"/>
+<rect x="274.75" y="1762.75" width="82.5" height="22.5" rx="2" fill="none" stroke="#26231F" stroke-width="1.5"/><text x="316.0" y="1779" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#26231F" font-weight="700" text-anchor="middle" >bør-krav</text>
+<text x="372" y="1780" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="20" fill="#26231F" font-weight="600" >Interesse for energibransjen</text>
+<text x="274" y="1814" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="14" fill="#5F5A51" >Ingen sitat – ingenting i CV-en hører til kravet.</text>
+<path d="M910,1774 Q926.0,1766.0 942,1774 M933.0,1773.9 L942,1774 L936.5,1766.9" fill="none" stroke="#A8261B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="950" y="1780" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Ingenting i CV-en handler om</text>
+<text x="950" y="1806" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >energibransjen. Ikke legg til noe</text>
+<text x="950" y="1832" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >som ikke stemmer.</text>
+<text x="230" y="1914" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="16" fill="#3A362F" >Under 90 % stiller vi ikke spørsmålet «Godt treff, klar til å søke?». Rediger</text>
+<text x="230" y="1938" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="16" fill="#3A362F" >CV-en i ditt eget verktøy, lim den inn igjen og analyser på nytt – annonsen står</text>
+<text x="230" y="1962" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="16" fill="#3A362F" >fortsatt i feltet.</text>
+<g transform="translate(230,1992)"><path d="M2,18 L5,11 L16,0 L20,4 L9,15 Z" fill="none" stroke="#1F3F8F" stroke-width="1.8" stroke-linejoin="round"/><path d="M2,18 L5,11 L9,15 Z" fill="#1F3F8F"/>
+</g><text x="262" y="2008" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="17" fill="#1F3F8F" font-weight="700" >Endre CV eller annonse</text>
+<path d="M262,2016 Q340.4,2019 458,2015" fill="none" stroke="#1F3F8F" stroke-width="1.6" stroke-linecap="round"/>
+<text x="120" y="2122" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >Innfelt variant: score ≥ 90 % (FR-10)</text>
+<rect x="120" y="2142" width="1200" height="300" fill="#FBF8F1" filter="url(#sh)"/><path d="M200,2142 V2442" stroke="#DFA096" stroke-width="1.5"/><text x="230" y="2192" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="17" fill="#26231F" font-weight="700" >Variant: samme annonse etter at Yvonne har gjort det som står i CV-en tydeligere</text>
+<text x="230" y="2222" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="15" fill="#5F5A51" >Alle sju andre krav truffet, «Interesse for energibransjen» mangler fortsatt.</text>
+<text x="230" y="2266" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="16" fill="#26231F" font-weight="700" >Match-score</text>
+<text x="236" y="2370" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="84" fill="#1F3F8F" font-weight="700" >92 %</text>
+<path d="M327.0,2284 C446.0,2281.2 495.0,2323.2 488,2348.4 C481.0,2387.6 376.0,2398.8 299.0,2393.2 C201.0,2384.8 196.79999999999998,2328.8 243.0,2300.8 C278.0,2284.0 341.0,2277.28 397.0,2278.4" fill="none" stroke="#1F3F8F" stroke-width="2.6" stroke-linecap="round"/>
+<text x="550" y="2302" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="28" fill="#26231F" font-weight="700" >Godt treff, klar til å søke?</text>
+<path d="M550,2316 Q698.0,2319 920,2315" fill="none" stroke="#A8261B" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="550" y="2338" width="120" height="54" rx="3" fill="#1F3F8F" filter="url(#shs)"/><rect x="554" y="2342" width="112" height="46" rx="2" fill="none" stroke="#FBF8F1" stroke-opacity="0.45" stroke-width="1"/><text x="610.0" y="2371.65" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="19" fill="#FBF8F1" font-weight="700" text-anchor="middle" >Ja</text>
+<rect x="687" y="2339" width="118" height="52" rx="3" fill="#FBF8F1" stroke="#1F3F8F" stroke-width="2"/><text x="746.0" y="2371.65" font-family="Charter, 'Bitstream Charter', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="19" fill="#1F3F8F" font-weight="700" text-anchor="middle" >Nei</text>
+<text x="950" y="2272" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#1F3F8F" >Ingen potensiell score her: ingen</text>
+<text x="950" y="2298" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#1F3F8F" >krav er delvis truffet.</text>
+<text x="950" y="2334" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Ja gir «Analyser ny annonse».</text>
+<text x="950" y="2360" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >Nei: du blir her og kan forbedre</text>
+<text x="950" y="2386" font-family="'Segoe Print', 'Bradley Hand', Noteworthy, 'Comic Sans MS', cursive" font-size="16" fill="#A8261B" >videre.</text>
+<path d="M80,2492 H1360" stroke="#CFC7B6" stroke-width="1"/><text x="80" y="2522" font-family="'Courier New', Courier, 'Nimbus Mono PS', ui-monospace, monospace" font-size="13" fill="#5F5A51" >Laget av gruppe G34, IBE160</text>
+</svg>
