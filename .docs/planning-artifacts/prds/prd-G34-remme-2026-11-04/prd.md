@@ -2,7 +2,7 @@
 title: "PRD: CV & Jobb applikasjonsassistent"
 status: final
 created: 2026-11-04
-updated: 2026-11-04
+updated: 2026-11-15
 ---
 
 # PRD: CV & Jobb applikasjonsassistent
@@ -147,11 +147,16 @@ Koden beregner match-scoren fra kravene:
 
 Match-score = oppnådde poeng ÷ maks mulige poeng × 100.
 
+`[ASSUMPTION: Må-krav teller dobbelt fordi de er de viktigste kriteriene i en annonse. Vektene 2/1/0,5 er et startpunkt (5/3/1 kunne også fungert), og justeres etter testsettet i §7.1.]`
+
 **Konsekvenser (testbare):**
 - Alle krav truffet gir 100 %.
 - Ett må-krav delvis truffet gir under 100 %.
 - Ett bør-krav som mangler, gir under 100 %.
 - Samme kravliste gir alltid samme score.
+- Scoren avrundes til nærmeste hele prosent. Den avrundede scoren er den som vises og den som brukes i FR-8 og FR-10 (89,6 % vises som 90 %).
+- Scoren beregnes etter sitatkontrollen i FR-11, med statusene slik de er etter kontrollen.
+- Er antall krav 0, beregnes ingen score (se FR-12).
 
 #### FR-8: Potensiell score *(bør — hvis tiden tillater)*
 
@@ -169,6 +174,8 @@ Koden beregner den potensielle scoren som om alle delvis truffede krav var truff
 
 Resultatsiden viser match-scoren øverst, deretter kravene som er truffet, så de som er delvis truffet, og til slutt de som mangler.
 
+`[ASSUMPTION: Det som er truffet vises først, slik at brukeren får de positive nyhetene før det som kan forbedres, og ikke føler seg ubrukelig. Valget bygger på egne erfaringer som jobbsøker, og prøves ut i skissene med bmad-ux og i SM-5.]`
+
 **Konsekvenser (testbare):**
 - Hvert krav er merket som må-krav eller bør-krav. Innenfor hver status kommer må-kravene før bør-kravene.
 - Krav som er truffet eller delvis truffet, viser sitatet.
@@ -179,7 +186,10 @@ Resultatsiden viser match-scoren øverst, deretter kravene som er truffet, så d
 
 Når match-scoren er 90 % eller høyere, spør appen «Godt treff, klar til å søke?». Realiserer UJ-1.
 
+`[ASSUMPTION: Grensen på 90 % er satt skjønnsmessig. 100 % er nesten umulig å nå, fordi hvor godt en CV treffer alltid avhenger av personen som leser den. Grensen kan justeres etter testsettet.]`
+
 **Konsekvenser (testbare):**
+- Grensen gjelder den avrundede scoren (FR-7).
 - **Ja:** appen viser «Analyser ny annonse». Trykker brukeren på den, tømmes annonsefeltet og CV-en beholdes.
 - **Nei:** brukeren blir på resultatsiden og kan forbedre CV-en og analysere på nytt.
 - Under 90 % vises ikke spørsmålet.
@@ -194,6 +204,8 @@ Koden kontrollerer at hvert sitat finnes ordrett i CV-en før resultatet vises.
 
 **Konsekvenser (testbare):**
 - Et krav med et sitat som ikke finnes i CV-en, får status mangler.
+- Et krav som nedgraderes til mangler, får forbedringshintet «Fant ikke belegg i CV-en for dette kravet».
+- Sitatkontrollen kjøres før match-scoren beregnes (FR-7).
 - Forskjeller i mellomrom og linjeskift regnes ikke som avvik.
 - Kontrollen kjøres på alle analyser og kan testes automatisk (se SM-1).
 
@@ -217,6 +229,7 @@ Mens analysen pågår, viser appen «Analyserer …».
 Feiler analysen (API-et svarer ikke, nøkkelen er ugyldig eller tidsgrensen nås), viser appen «Klarte ikke å analysere, prøv igjen».
 
 **Konsekvenser (testbare):**
+- Svarer språkmodellen med noe som ikke kan tolkes som en kravliste (ugyldig format, manglende felt, ukjent status eller tomt sitat for et krav som er truffet eller delvis truffet), behandles det som en feil i analysen: appen viser «Klarte ikke å analysere, prøv igjen», og ingen delvis resultat vises.
 - Feltene er fortsatt utfylt.
 - «Analyser» er tilgjengelig igjen.
 - Tidsgrensen er 60 sekunder.
@@ -246,7 +259,8 @@ Limer brukeren inn egen tekst i demomodus og trykker «Analyser», viser appen �
 - **Språk:** grensesnittet og meldingene er alltid på norsk. CV og annonse kan være på norsk eller engelsk. Er både CV og annonse på engelsk, skrives kravene og forbedringshintene på engelsk. Ellers skrives de på norsk.
 - **Plattform:** en nettside som kjøres lokalt og brukes i en nettleser på PC. Mobilvisning er ikke et krav i v1.
 - **Kjørbarhet:** appen kan startes lokalt ved å følge README, uten betalte kontoer og uten gruppens nøkler. Nøkkelen settes i `.env` etter mal i `.env.example`. Uten nøkkel starter appen i demomodus (§4.5).
-- **Språkmodell og kostnad:** analysen bruker Claude Opus 5.5 via Anthropics API. Anslått kostnad er 0,50–2,00 kr per analyse, 10–40 kr for en testrunde på 20 analyser, og 60–300 kr for prompt-utvikling (100–200 kjøringer).
+- **Språkmodell og kostnad:** analysen bruker en Claude-modell via Anthropics API. Kravet er kostnaden: en analyse skal koste maks 2 kr. Hvilken modell som brukes, er et arkitekturvalg. Kostnadsanslaget er regnet med Claude Opus 5.5: 0,50–2,00 kr per analyse, 10–40 kr for en testrunde på 20 analyser, og 60–300 kr for prompt-utvikling (100–200 kjøringer).
+- **Testing:** automatiske tester av FR-5, FR-7, FR-10, FR-11 og FR-14 kjøres mot faste, lagrede modellsvar (også ugyldige), og bruker ikke API-nøkkel. De gir samme svar hver gang og koster ingenting. Testsettet i §7.1 kjøres manuelt mot den ekte modellen, og resultatet noteres.
 - **Ytelse:** en analyse tar vanligvis 15–30 sekunder. Tidsgrensen er 60 sekunder (FR-14).
 - **Personvern:** CV- og annonsetekst lagres ikke på serveren eller i filer (FR-2), og brukeren får beskjed om at CV-en sendes til Claude (FR-3). `.env` er utenfor Git. Repoet inneholder bare fiktive CV-er. Testannonsene kan være ekte, offentlige annonser.
 
@@ -294,4 +308,21 @@ Limer brukeren inn egen tekst i demomodus og trykker «Analyser», viser appen �
 
 ## 9. Åpne spørsmål og antakelser
 
-Ingen som blokkerer UX eller arkitektur. Alle antakelser er bekreftet. Skisser av inputsiden og resultatsiden lages med `bmad-ux`.
+Ingen av punktene blokkerer UX eller arkitektur. Skisser av inputsiden og resultatsiden lages med `bmad-ux`.
+
+### 9.1 Antakelser
+
+| Antakelse | Hvor | Begrunnelse | Hvordan den prøves |
+|---|---|---|---|
+| Må-krav teller dobbelt (vektene 2/1/0,5) | FR-7 | Må-krav er de viktigste kriteriene i en annonse. De nøyaktige tallene er et startpunkt (5/3/1 kunne også fungert). | Justeres etter testsettet (SM-3). |
+| Grensen for «Godt treff» er 90 % | FR-10 | Skjønnsmessig valgt. 100 % er nesten umulig, fordi vurderingen av en CV avhenger av leseren. | Justeres etter testsettet. |
+| Truffede krav vises først | FR-9 | Positive nyheter først, så det som kan forbedres, slik at brukeren ikke føler seg ubrukelig. Bygger på egne erfaringer. | Skissene i `bmad-ux` og SM-5. |
+| Opus 5.5 holder kostnaden innenfor 2 kr per analyse | §5 | Kostnadsanslag fra briefen. | Endelig modell velges i arkitekturen. |
+
+### 9.2 Åpne spørsmål
+
+- Skal kravene som mangler, vises først i stedet (brukerens mål i §2.1 er å se hva som mangler)? Avgjøres ved skissene i `bmad-ux`. Inntil videre gjelder rekkefølgen i FR-9.
+
+### 9.3 KI-bidrag
+
+KI foreslo poengvektene, at scoren beregnes i kode, match-score som begrep og én annonse per analyse i stedet for flere samtidig. Gruppen vurderte forslagene og valgte å beholde dem.
