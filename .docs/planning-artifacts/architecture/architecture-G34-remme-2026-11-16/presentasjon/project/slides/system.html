@@ -1,0 +1,39 @@
+<section id="system" class="alt">
+<h2>To deler som snakker sammen</h2>
+<svg aria-label="Systemoversikt: nettleseren snakker med Next.js-frontenden på port 3000, som sender API-kall videre til FastAPI-backenden på port 8000. Backenden kaller Claude når nøkkel finnes, og lagrede eksempelsvar når den ikke finnes. Bare backenden leser .env." viewBox="0 0 1664 560" width="1664" height="560">
+<style>
+.b{fill:#FFFDF9;stroke:#2A2420;stroke-width:2}
+.t{font-family:Georgia,serif;font-size:34px;fill:#2A2420}
+.s{font-family:'Public Sans',Arial,sans-serif;font-size:24px;fill:#5E544B}
+.a{stroke:#2A2420;stroke-width:2;fill:none}
+.d{stroke:#9A4A2E;stroke-width:2;stroke-dasharray:8 6;fill:none}
+</style>
+<rect class="b" x="0" y="190" width="300" height="140" rx="4"/>
+<text class="t" x="150" y="252" text-anchor="middle">Nettleser</text>
+<text class="s" x="150" y="292" text-anchor="middle">PC, ingen innlogging</text>
+<path class="a" d="M300 260 H420"/><path class="a" d="M408 250 L420 260 L408 270"/>
+<rect class="b" x="420" y="170" width="380" height="180" rx="4"/>
+<text class="t" x="610" y="235" text-anchor="middle">Frontend</text>
+<text class="s" x="610" y="275" text-anchor="middle">Next.js · :3000</text>
+<text class="s" x="610" y="310" text-anchor="middle">viser, regner aldri</text>
+<path class="a" d="M800 260 H920"/><path class="a" d="M908 250 L920 260 L908 270"/>
+<text class="s" x="860" y="240" text-anchor="middle">/api/*</text>
+<rect class="b" x="920" y="170" width="380" height="180" rx="4"/>
+<text class="t" x="1110" y="235" text-anchor="middle">Backend</text>
+<text class="s" x="1110" y="275" text-anchor="middle">FastAPI · :8000</text>
+<text class="s" x="1110" y="310" text-anchor="middle">bestemmer alt</text>
+<path class="a" d="M1300 220 L1400 110"/><path class="a" d="M1386 114 L1400 110 L1398 124"/>
+<path class="a" d="M1300 300 L1400 410"/><path class="a" d="M1386 406 L1400 410 L1398 396"/>
+<rect class="b" x="1400" y="40" width="264" height="130" rx="4"/>
+<text class="t" x="1532" y="98" text-anchor="middle">Claude</text>
+<text class="s" x="1532" y="136" text-anchor="middle">nøkkel finnes</text>
+<rect class="b" x="1400" y="350" width="264" height="130" rx="4"/>
+<text class="t" x="1532" y="408" text-anchor="middle">Eksempelsvar</text>
+<text class="s" x="1532" y="446" text-anchor="middle">ingen nøkkel</text>
+<rect class="b" x="980" y="460" width="260" height="80" rx="4" style="stroke:#9A4A2E"/>
+<text class="s" x="1110" y="508" text-anchor="middle" style="fill:#9A4A2E">.env (nøkkel)</text>
+<path class="d" d="M1110 460 V350"/>
+</svg>
+<p class="small">Docker Compose starter begge med én kommando. Uten Docker startes de med <span class="chip">uv</span> og <span class="chip">npm</span>, med samme porter.</p>
+<aside>Nettleseren ser bare én adresse, fordi Next.js sender API-kallene videre til backenden. Nøkkelen finnes bare i backenden.</aside>
+</section>

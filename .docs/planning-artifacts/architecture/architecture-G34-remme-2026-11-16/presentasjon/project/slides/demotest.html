@@ -1,0 +1,11 @@
+<section id="demotest" class="alt">
+<h2>Demomodus og tester bruker samme vei</h2>
+<div class="rulelist">
+<div class="row"><div class="k">Demomodus</div><div class="v">Uten nøkkel bruker backenden lagrede eksempelsvar. Eksemplet har ett krav av hver status og ett oppdiktet sitat, så sensor ser også sitatkontrollen i arbeid.</div></div>
+<div class="row"><div class="k">pytest</div><div class="v">Kjernen og analysen testes mot lagrede svar, også ugyldige. Testene stoppes hvis de prøver å kalle Claude.</div></div>
+<div class="row"><div class="k">Vitest</div><div class="v">Komponenter, meldinger og tegntelling.</div></div>
+<div class="row"><div class="k">Playwright</div><div class="v">Hele flyten i demomodus, med tilgjengelighetssjekk (axe).</div></div>
+<div class="row"><div class="k">Testsettet</div><div class="v">5 annonser og 3 fiktive CV-er kjøres manuelt mot ekte Claude, og resultatet noteres.</div></div>
+</div>
+<aside>Ingen automatiske tester går mot nettet. Det gjør dem gratis og gir samme svar hver gang, som PRD-en krever.</aside>
+</section>

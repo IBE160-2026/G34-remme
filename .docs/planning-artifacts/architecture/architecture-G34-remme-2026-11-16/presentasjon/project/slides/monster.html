@@ -1,0 +1,34 @@
+<section id="monster">
+<h2>Mønsteret: en ren kjerne med utskiftbare tilkoblinger</h2>
+<div class="cols" style="align-items:center">
+<svg aria-label="Ports and adapters: i midten domenekjernen med sitatkontroll og score, omgitt av analysen. Analysen snakker med språkmodellen gjennom én port. Bak porten står to adaptere: Anthropic for ekte analyser og fixture for demo og tester." viewBox="0 0 860 640" width="860" height="640">
+<style>
+.o{fill:#ECE3D5;stroke:#2A2420;stroke-width:2}
+.i{fill:#FFFDF9;stroke:#2A2420;stroke-width:2}
+.t{font-family:Georgia,serif;font-size:32px;fill:#2A2420}
+.s{font-family:'Public Sans',Arial,sans-serif;font-size:24px;fill:#5E544B}
+.p{fill:#2A2420}
+.a{stroke:#2A2420;stroke-width:2;fill:none}
+</style>
+<circle class="o" cx="330" cy="320" r="290"/>
+<circle class="i" cx="330" cy="320" r="150"/>
+<text class="t" x="330" y="305" text-anchor="middle">Domene</text>
+<text class="s" x="330" y="342" text-anchor="middle">sitatkontroll · score</text>
+<text class="t" x="330" y="110" text-anchor="middle">Analyse</text>
+<text class="s" x="330" y="145" text-anchor="middle">fast rekkefølge</text>
+<rect class="p" x="600" y="295" width="40" height="50"/>
+<text class="s" x="620" y="385" text-anchor="middle">port</text>
+<path class="a" d="M640 300 L720 190"/><path class="a" d="M640 340 L720 450"/>
+<rect class="i" x="700" y="130" width="160" height="90" rx="4"/>
+<text class="s" x="780" y="185" text-anchor="middle" style="fill:#2A2420">Anthropic</text>
+<rect class="i" x="700" y="420" width="160" height="90" rx="4"/>
+<text class="s" x="780" y="475" text-anchor="middle" style="fill:#2A2420">Fixture</text>
+</svg>
+<div class="col" style="gap:28px">
+<h3>Hexagonal arkitektur, også kalt ports and adapters</h3>
+<p>Kjernen vet ikke om svaret kommer fra Claude eller fra en fil. Begge tilkoblingene gir samme type svar, og alt går gjennom de samme stegene.</p>
+<p>Derfor får vi demomodus og nøkkelfri testing fra én og samme konstruksjon.</p>
+</div>
+</div>
+<aside>Dette er det samme prinsippet som technology.md kaller mock-fallback. Appen fungerer uten nøkler, men her uten at demoen går sin egen vei.</aside>
+</section>

@@ -1,0 +1,15 @@
+<section id="pipeline" class="alt">
+<h2>Én analyse, alltid i samme rekkefølge</h2>
+<div class="steps">
+<div class="step rise"><div class="n">1</div><div class="t">Tomt felt eller over 15 000 tegn?<br><span>stopp med melding</span></div></div>
+<div class="step rise"><div class="n">2</div><div class="t">Demomodus og egen tekst?<br><span>«Ekte analyse krever API-nøkkel»</span></div></div>
+<div class="step rise"><div class="n">3</div><div class="t">Spør Claude<br><span>ugyldig svar eller tidsavbrudd = feil</span></div></div>
+<div class="step rise d1"><div class="n">4</div><div class="t">Ingen krav funnet?<br><span>stopp med melding</span></div></div>
+<div class="step rise d1"><div class="n">5</div><div class="t">Sitatkontroll<br><span>står sitatet ordrett i CV-en?</span></div></div>
+<div class="step rise d1"><div class="n">6</div><div class="t">Score i kode<br><span>runder ,5 alltid opp</span></div></div>
+<div class="step rise d2"><div class="n">7</div><div class="t">Potensiell score<br><span>hvis delvis truffet blir truffet</span></div></div>
+<div class="step rise d2"><div class="n">8</div><div class="t">Sortering<br><span>truffet → delvis → mangler, må før bør</span></div></div>
+<div class="step rise d2"><div class="n">9</div><div class="t">Godt treff?<br><span>score på 90 % eller mer</span></div></div>
+</div>
+<aside>Rekkefølgen er en regel, AD-4. Sitatkontrollen kommer før scoren, slik PRD-en krever. Scoren regnes i heltall for å unngå at 89,5 blir 89 på grunn av flyttall.</aside>
+</section>

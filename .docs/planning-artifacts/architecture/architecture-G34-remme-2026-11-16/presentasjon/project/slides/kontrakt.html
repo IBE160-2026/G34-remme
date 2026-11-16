@@ -1,0 +1,11 @@
+<section id="kontrakt">
+<h2>Tre endepunkter og faste utfall</h2>
+<table>
+<tr><th style="width:520px">Endepunkt</th><th>Svar</th></tr>
+<tr><td class="code">GET /api/status</td><td>Er appen i demomodus, og hva er tegngrensen?</td></tr>
+<tr><td class="code">GET /api/example</td><td>Eksempel-CV og eksempelannonse (bare i demomodus)</td></tr>
+<tr><td class="code">POST /api/analyze</td><td>Et resultat, eller ett av fem utfall: tomt felt, for lang tekst, krever nøkkel, ingen krav, eller feil i analysen</td></tr>
+</table>
+<p class="small">Backenden beskriver svaret med Pydantic. Frontendens typer genereres fra dette og skrives aldri for hånd. Frontenden eier alle norske meldinger.</p>
+<aside>Utfall sendes som data, ikke som HTTP-feil. Alt frontenden ikke forstår, som nettverksfeil og tidsavbrudd, vises som «Klarte ikke å analysere, prøv igjen».</aside>
+</section>

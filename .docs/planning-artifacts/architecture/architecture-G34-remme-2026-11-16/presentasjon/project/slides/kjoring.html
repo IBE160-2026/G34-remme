@@ -1,0 +1,20 @@
+<section id="kjoring">
+<h2>Slik startes appen, og hva den er laget av</h2>
+<div class="cols">
+<div class="col" style="gap:24px">
+<h3>For sensor</h3>
+<p><span class="chip">docker compose up</span>, og så åpne <span class="chip">127.0.0.1:3000</span>. Uten nøkkel starter appen i demomodus.</p>
+<h3>For utviklere</h3>
+<p><span class="chip">uv run fastapi dev</span> i backend og <span class="chip">npm run dev</span> i frontend. Samme porter, samme app.</p>
+</div>
+<table style="flex:1">
+<tr><th>Del</th><th>Valg</th></tr>
+<tr><td>Backend</td><td>Python 3.14 · FastAPI · Pydantic</td></tr>
+<tr><td>Claude</td><td>anthropic-SDK · Opus 5.5</td></tr>
+<tr><td>Frontend</td><td>Next.js 16 · React 19 · TypeScript</td></tr>
+<tr><td>Utseende</td><td>Tailwind 4 · shadcn/ui · DESIGN.md</td></tr>
+<tr><td>Testing</td><td>pytest · Vitest · Playwright</td></tr>
+</table>
+</div>
+<aside>Stacken bygger på technology.md fra Pytagoras-prosjektet, men bare det en liten lokal app trenger. Database, Redis, Railway, innlogging og betaling er tatt bort. Alle versjoner er sjekket mot npm og PyPI.</aside>
+</section>
