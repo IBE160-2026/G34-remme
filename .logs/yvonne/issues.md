@@ -17,4 +17,6 @@
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Konsept 14: avklar «Forrige analyse»-score (ikke i PRD), CV-visning ved siden av kravene, og om både «Endre CV eller annonse» og «Lim inn oppdatert CV» skal være med (løst 2026-11-16: fjernet, nei, bare «Endre CV eller annonse»)
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Konsept 14: samkjør resultatsiden i demomodus (13s oversikt) med debriefen (11), slik FR-16 krever (løst 2026-11-16: demomodus fra 11)
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Se gjennom konsept 14 (`.working/concept-14-valgt-kombinasjon/`) før DESIGN.md og EXPERIENCE.md opprettes (løst 2026-11-16: konsept 14 satt til final)
-- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Skriv DESIGN.md og EXPERIENCE.md ut fra konsept 14 (`bmad-ux` Finalize)
+- [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Skriv DESIGN.md og EXPERIENCE.md ut fra konsept 14 (`bmad-ux` Finalize) (løst 2026-11-16: skrevet som draft)
+- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Gå gjennom DESIGN.md og EXPERIENCE.md (draft). Valgfritt: reviewer gate og polish før `status: final`
+- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Velg UI-system/komponentbibliotek i arkitekturen, og tegn bruddpunktet under 1280 px
