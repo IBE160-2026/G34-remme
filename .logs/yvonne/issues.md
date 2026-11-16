@@ -19,4 +19,7 @@
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Se gjennom konsept 14 (`.working/concept-14-valgt-kombinasjon/`) før DESIGN.md og EXPERIENCE.md opprettes (løst 2026-11-16: konsept 14 satt til final)
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Skriv DESIGN.md og EXPERIENCE.md ut fra konsept 14 (`bmad-ux` Finalize) (løst 2026-11-16: skrevet som draft)
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Gå gjennom DESIGN.md og EXPERIENCE.md (draft). Valgfritt: reviewer gate og polish før `status: final` (løst 2026-11-16: satt til final)
-- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Velg UI-system/komponentbibliotek i arkitekturen, og tegn bruddpunktet under 1280 px
+- [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Velg UI-system/komponentbibliotek i arkitekturen, og tegn bruddpunktet under 1280 px (UI-system løst 2026-11-16: shadcn/ui i arkitekturen; bruddpunkt fortsatt utsatt)
+- [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Bekreft tilleggene i arkitekturen (`/api/example`, max_tokens 6000/effort medium), velg reviewer gate og forklaring, og sett til final
+- [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Tegn bruddpunktet under 1280 px (utsatt fra UX og arkitektur)
+- [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Velg endelig modell (Opus 5.5 eller Sonnet 5.5) og effort etter testsettet
