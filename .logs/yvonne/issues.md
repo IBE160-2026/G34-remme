@@ -18,5 +18,5 @@
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Konsept 14: samkjør resultatsiden i demomodus (13s oversikt) med debriefen (11), slik FR-16 krever (løst 2026-11-16: demomodus fra 11)
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Se gjennom konsept 14 (`.working/concept-14-valgt-kombinasjon/`) før DESIGN.md og EXPERIENCE.md opprettes (løst 2026-11-16: konsept 14 satt til final)
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Skriv DESIGN.md og EXPERIENCE.md ut fra konsept 14 (`bmad-ux` Finalize) (løst 2026-11-16: skrevet som draft)
-- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Gå gjennom DESIGN.md og EXPERIENCE.md (draft). Valgfritt: reviewer gate og polish før `status: final`
+- [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Gå gjennom DESIGN.md og EXPERIENCE.md (draft). Valgfritt: reviewer gate og polish før `status: final` (løst 2026-11-16: satt til final)
 - [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Velg UI-system/komponentbibliotek i arkitekturen, og tegn bruddpunktet under 1280 px
