@@ -14,4 +14,5 @@
 - [ ] 2026-11-15 [impeccable-installasjon](995-2026-11-15-12-22-36-impeccable-installasjon.md) — Kjør `/impeccable init` etter omstart av Claude Code, før `bmad-ux`
 - [x] 2026-11-15 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Vurder de 10 UX-konseptene (`ux-designs/ux-G34-remme-2026-11-15/.working/konsepter.html`) og velg retning å drille videre i (løst 2026-11-15: 01-utseende + 09-funksjonalitet)
 - [x] 2026-11-15 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Vurder hybridkonseptene 11–13 (01-utseende + 09-funksjonalitet) og velg retning for DESIGN.md/EXPERIENCE.md (løst 2026-11-16: konsept 14 = 11 + 13)
-- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Konsept 14: avklar «Forrige analyse»-score (ikke i PRD), CV-visning ved siden av kravene, og om både «Endre CV eller annonse» og «Lim inn oppdatert CV» skal være med
+- [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Konsept 14: avklar «Forrige analyse»-score (ikke i PRD), CV-visning ved siden av kravene, og om både «Endre CV eller annonse» og «Lim inn oppdatert CV» skal være med (løst 2026-11-16: fjernet, nei, bare «Endre CV eller annonse»)
+- [ ] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Konsept 14: samkjør resultatsiden i demomodus (13s oversikt) med debriefen (11), slik FR-16 krever
