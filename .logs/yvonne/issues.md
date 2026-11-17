@@ -24,3 +24,4 @@
 - [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Tegn bruddpunktet under 1280 px (utsatt fra UX og arkitektur)
 - [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Velg endelig modell (Opus 5.5 eller Sonnet 5.5) og effort etter testsettet
 - [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Bekreft `experimental.proxyTimeout` i Next.js 16.4 i første frontend-story (ellers direkte kall med CORS)
+- [ ] 2026-11-17 [epics-og-stories](992-2026-11-17-18-55-01-epics-og-stories.md) — Avgjør tekster uten PRD-kilde ved implementering: entall av FR-8-setningen, «Match-score mot …», nedgraderingstekst i fordelingsraden
