@@ -22,10 +22,11 @@
 - [x] 2026-11-16 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Velg UI-system/komponentbibliotek i arkitekturen, og tegn bruddpunktet under 1280 px (UI-system løst 2026-11-16: shadcn/ui i arkitekturen; bruddpunkt fortsatt utsatt)
 - [x] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Bekreft tilleggene i arkitekturen (`/api/example`, max_tokens 6000/effort medium), velg reviewer gate og forklaring, og sett til final (løst 2026-11-16)
 - [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Tegn bruddpunktet under 1280 px (utsatt fra UX og arkitektur)
-- [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Velg endelig modell (Opus 5.5 eller Sonnet 5.5) og effort etter testsettet
+- [x] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Velg endelig modell (Opus 5.5 eller Sonnet 5.5) og effort etter testsettet (modell løst 2026-11-17: bare Opus 5.5; effort/max_tokens flyttet til eget punkt)
 - [ ] 2026-11-16 [arkitektur](993-2026-11-16-19-48-22-arkitektur.md) — Bekreft `experimental.proxyTimeout` i Next.js 16.4 i første frontend-story (ellers direkte kall med CORS)
 - [ ] 2026-11-17 [epics-og-stories](992-2026-11-17-18-55-01-epics-og-stories.md) — Avgjør tekster uten PRD-kilde ved implementering: entall av FR-8-setningen, «Match-score mot …», nedgraderingstekst i fordelingsraden
-- [ ] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Avgjør om story 1.1 eller 2.3 eier verifiseringen av `experimental.proxyTimeout`
-- [ ] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Story 2.4: priskonstanter per modell (også Sonnet 5.5) for kostnad i 3.2/3.3
-- [ ] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Samkjør axe-kravet i story 1.9 («ingen brudd») og 3.4 («0 serious/critical»)
-- [ ] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Story 2.1: sjekk `output_format` mot `output_config.format` i anthropic SDK 2.9.0
+- [x] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Avgjør om story 1.1 eller 2.3 eier verifiseringen av `experimental.proxyTimeout` (løst 2026-11-17)
+- [x] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Story 2.4: priskonstanter per modell (også Sonnet 5.5) for kostnad i 3.2/3.3 (løst 2026-11-17)
+- [x] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Samkjør axe-kravet i story 1.9 («ingen brudd») og 3.4 («0 serious/critical») (løst 2026-11-17)
+- [x] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Story 2.1: sjekk `output_format` mot `output_config.format` i anthropic SDK 2.9.0 (løst 2026-11-17)
+- [ ] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Velg effort og `max_tokens` for Opus 5.5 etter testsettet (story 3.3)
