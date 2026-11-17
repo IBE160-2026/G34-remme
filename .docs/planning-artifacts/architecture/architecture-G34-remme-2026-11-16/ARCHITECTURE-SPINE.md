@@ -7,7 +7,7 @@ paradigm: 'Hexagonal (ports and adapters) i backend, tynn presentasjonsklient i 
 scope: 'Hele v1 (FR-1–FR-17): lokal nettside med Next.js-frontend og FastAPI-backend, Claude via Anthropics API, demomodus uten nøkkel'
 status: final
 created: '2026-11-16'
-updated: '2026-11-16'
+updated: '2026-11-17'
 binds: [FR-1, FR-2, FR-3, FR-4, FR-5, FR-6, FR-7, FR-8, FR-9, FR-10, FR-11, FR-12, FR-13, FR-14, FR-15, FR-16, FR-17]
 sources:
   - ../../prds/prd-G34-remme-2026-11-04/prd.md
@@ -60,7 +60,7 @@ Avhengigheter går bare i pilenes retning. `domain` importerer ingenting fra and
 - **Binds:** `backend/app/llm/`, FR-5, FR-6, FR-14, FR-16, testing
 - **Prevents:** at demomodus eller tester går utenom pipelinen, at valideringen skjer på ulike steder, og at «rått modellsvar» tolkes på flere måter.
 - **Rule:**
-  - Porten er `extract(cv, annonse) -> ExtractionResult`. Ved feil kaster den `ExtractionFailed(reason)`, der `reason` er en av `timeout`, `api_error`, `stop_reason`, `refusal` eller `invalid`. Adapteren eier oversettelsen. Use caset ser bare `ExtractionResult` eller `ExtractionFailed`.
+  - Porten er `extract(cv, annonse) -> Extraction`, der `Extraction` er `{ result: ExtractionResult, model: str, usage: {input_tokens, output_tokens} | null }`. Ved feil kaster den `ExtractionFailed(reason, usage=None)`, der `reason` er en av `timeout`, `api_error`, `stop_reason`, `refusal` eller `invalid`. Adapteren eier oversettelsen. Use caset ser bare `Extraction` eller `ExtractionFailed`, og bruker `model` og `usage` bare til logging (AD-7). Fixture-adapteren gir `model: "fixture"` og `usage: null`.
   - `ExtractionResult` er `{ requirements: [ { text, type: must|should, status: met|partial|missing, quote: str|null, hint: str|null } ] }`. Rekkefølgen er annonsens.
   - Begge adaptere bruker den samme funksjonen `parse_extraction(text) -> ExtractionResult`, som kaster `ExtractionFailed("invalid")` når validering feiler (AD-4 steg 3).
   - En fixture er en konvolutt: `{ "stop_reason": "end_turn", "text": "<rå JSON-tekst fra modellen>" }`. Fixture-adapteren får filstien i konstruktøren og leser bare den fila.
@@ -137,7 +137,7 @@ Avhengigheter går bare i pilenes retning. `domain` importerer ingenting fra and
   - Kallet er `client.beta.messages.parse(model=settings.anthropic_model, max_tokens=6000, output_format=ExtractionResult, output_config={"effort": "medium"}, betas=["server-side-fallback-2026-07-01"], fallbacks="default", …)`. Standardmodellen er `claude-opus-5-5` (`ANTHROPIC_MODEL`).
   - `stop_reason` ≠ `end_turn` → `ExtractionFailed("stop_reason")`. `refusal` → `ExtractionFailed("refusal")`. Teksten valideres med `parse_extraction` (AD-2).
   - Systemprompten krever ordrette sitater tegn for tegn, korte hint, ingen ny erfaring, ingen omskrevne setninger, krav i annonsens rekkefølge, og språkregelen i PRD §5. Modellen gir aldri tall eller score.
-  - `max_tokens` 6 000 og effort `medium` er startverdier som justeres etter testsettet. Verste tilfelle (2 × 15 000 tegn ≈ 12k tokens inn og 6 000 ut) koster ≈ $0,17, altså ≈ 1,8 kr.
+  - `max_tokens` 6 000 og effort `medium` er startverdier som justeres etter testsettet. Verste tilfelle (2 × 15 000 tegn ≈ 12k tokens inn og 6 000 ut) koster $0,168, altså ≈ 1,61 kr med fast kurs 1 USD = 9,61 kr. Priser og kurs er konstanter på ett sted i backenden.
 
 ### AD-9 — Tester går aldri mot nettet [ADOPTED]
 
@@ -150,7 +150,7 @@ Avhengigheter går bare i pilenes retning. `domain` importerer ingenting fra and
   - Eksempelsvaret i `app/fixtures/example/response.json` har minst ett krav av hver status og ett oppdiktet sitat, slik at demoen viser en nedgradering. En test sjekker dette.
   - Domenet testes med faste kravlister, også alle scorekombinasjoner opp til 20 krav mot `Fraction`. Grensetester for `MAX_CHARS` (14 999, 15 000, 15 001 og tekst med emoji) finnes i både pytest og Vitest.
   - Playwright kjører hele flyten i demomodus, også «Bruk eksempel» → «Analyser» → resultat, med `@axe-core/playwright` på input, resultat og meldinger.
-  - Testsettet (SM-2, SM-3, SM-C1) kjøres manuelt med `backend/scripts/run_testset.py` mot ekte Claude. Fasiten ligger i `backend/testset/`, og resultatene (statuser, antall, tokens, kostnad, aldri CV-tekst) skrives til `.docs/testset-results/<dato>.md`.
+  - Testsettet (SM-2, SM-3, SM-C1) kjøres manuelt med `backend/scripts/run_testset.py` mot ekte Claude. Fasiten ligger i `backend/testset/`, og resultatene (statuser, antall, tokens, kostnad, aldri CV-tekst) skrives til `.docs/testset-results/<dato>-<modell>.md`.
 
 ### AD-10 — Nøkkelen finnes bare i backenden [ADOPTED]
 
