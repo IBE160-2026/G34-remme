@@ -170,7 +170,7 @@ So that jeg ser at appen kjører i demomodus uten nøkkel og uten kostnad.
 **Given** at frontenden kjører
 **When** nettleseren laster `/`
 **Then** frontenden henter `/api/status` i nettleseren ved hver sidelasting (aldri ved bygg) gjennom Next-rewriten av `/api/*` til `BACKEND_URL` i `next.config.ts` (AD-3, AD-10)
-**And** `next.config.ts` setter `experimental.proxyTimeout: 75000` eksplisitt, og det er verifisert at innstillingen virker i Next 16.4 (AD-14)
+**And** `next.config.ts` har bare rewriten, og `experimental.proxyTimeout` verifiseres og settes i story 2.3 (AD-14)
 **And** når `demo` er `true`, vises banneret «Demomodus – ingen API-nøkkel funnet» som et helt bånd i `demo-band` med infoikon (1,5 px strek) og en lenke til README, der lenkemålet er én konstant i `frontend/lib/messages.ts` (FR15, UX-DR16)
 **And** når `demo` er `false`, vises ikke banneret
 
@@ -591,6 +591,7 @@ So that jeg får en ekte analyse av min egen CV, og aldri ser et halvt eller opp
 **Given** en `AnthropicExtractor` bygget med en mocket SDK-klient
 **When** `extract(cv, annonse)` kalles
 **Then** klienten er laget som `Anthropic(timeout=60.0, max_retries=0)`, og kallet er `client.beta.messages.parse` med `model` fra settings, `max_tokens=6000`, `output_format=ExtractionResult`, `output_config={"effort": "medium"}`, `betas=["server-side-fallback-2026-07-01"]` og `fallbacks="default"` (AR10, AD-8)
+**And** `output_config` har ingen `format`-nøkkel, fordi SDK 2.9.0 avviser `output_format` og `output_config.format` i samme kall. `output_format` er merket som deprecated, men ble verifisert 2026-11-17 til å virke i `beta.messages.parse` i 2.9.0, der den slås sammen med `effort` i `output_config`. En test sjekker kallet mot den mockede klienten (AD-8)
 **And** modellen er `claude-opus-5-5` når `ANTHROPIC_MODEL` mangler, og verdien i `ANTHROPIC_MODEL` når den er satt, og `.env.example` dokumenterer begge variablene (AR12)
 **And** CV og annonse sendes i brukermeldingen, og systemprompten hentes fra `llm/prompt.py`, der denne storyen lager en første versjon med reglene i AD-8 (Story 2.2 finjusterer og røyktester den)
 
@@ -793,7 +794,7 @@ So that kravuttrekk og status kan måles mot noe som ikke er tilpasset modellens
 
 As a gruppen G34,
 I want et skript som kjører hele testsettet mot ekte Claude og skriver en rapport med målene,
-So that SM-1, SM-2, SM-3 og SM-C1, tokens og kostnad kan dokumenteres og måles på nytt med en annen modell.
+So that SM-1, SM-2, SM-3 og SM-C1, tokens og kostnad kan dokumenteres og måles på nytt med et annet effort eller `max_tokens`.
 
 **Acceptance Criteria:**
 
@@ -805,7 +806,7 @@ So that SM-1, SM-2, SM-3 og SM-C1, tokens og kostnad kan dokumenteres og måles 
 **Given** en fullført kjøring
 **When** rapporten åpnes
 **Then** den ligger i `.docs/testset-results/<dato>-<modell>.md` og oppgir modell, effort, `max_tokens`, dato og commit-hash
-**And** en kjøring med `--model` (og eventuelt `--effort`) gir en ny rapportfil uten å overskrive en tidligere rapport for en annen modell
+**And** en kjøring med `--effort` (og eventuelt `--max-tokens`) gir en ny rapportfil med oppsettet i filnavnet, uten å overskrive en tidligere rapport for et annet oppsett. Modellen er alltid `claude-opus-5-5`
 
 **Given** rapporten
 **When** SM-1-delen leses
@@ -829,25 +830,26 @@ So that SM-1, SM-2, SM-3 og SM-C1, tokens og kostnad kan dokumenteres og måles 
 **When** de søkes gjennom etter tekst fra CV-ene, sitater, hint eller modellsvar
 **Then** ingen slik tekst finnes. Krav vises bare med fasit-ID og status (AD-7)
 
-### Story 3.3: Modellvalg ut fra testsettet
+### Story 3.3: Effort og max_tokens for Opus 5.5 ut fra testsettet
 
 As a gruppen G34,
-I want å velge standardmodell og effort ut fra målte resultater fra testsettet,
-So that appen bruker det billigste oppsettet som holder SM-2, SM-3 og SM-C1 innenfor kostnadstaket på 2 kr (NFR4).
+I want å velge effort og `max_tokens` for `claude-opus-5-5` ut fra målte resultater fra testsettet,
+So that appen bruker det billigste oppsettet av Opus 5.5 som holder SM-2, SM-3 og SM-C1 innenfor kostnadstaket på 2 kr (NFR4).
 
 **Acceptance Criteria:**
 
 **Given** skriptet fra story 3.2
-**When** testsettet kjøres med `claude-opus-5-5` og med `claude-sonnet-5-5` (manuelt, med nøkkel)
-**Then** `.docs/testset-results/` har én rapport per modell
-**And** er det kjørt med effort `low` eller `medium` i tillegg, har hver kombinasjon av modell og effort sin egen rapport
+**When** testsettet kjøres med `claude-opus-5-5` og startverdiene effort `medium` og `max_tokens=6000` (manuelt, med nøkkel)
+**Then** `.docs/testset-results/` har en rapport for startoppsettet
+**And** er det kjørt med effort `low` eller en annen `max_tokens` i tillegg, har hvert oppsett sin egen rapport
+**And** ingen andre modeller enn `claude-opus-5-5` kjøres eller sammenlignes
 
 **Given** rapportene
 **When** sammenligningen skrives
-**Then** den viser i én tabell per modell og effort: SM-1, SM-2, SM-3, SM-C1, antall `analysis_failed`, gjennomsnittlig og høyeste kostnad i kr, og gjennomsnittlig og høyeste varighet i sekunder (NFR4, NFR6)
+**Then** den viser i én tabell per oppsett (effort og `max_tokens`): SM-1, SM-2, SM-3, SM-C1, antall `analysis_failed`, gjennomsnittlig og høyeste kostnad i kr, og gjennomsnittlig og høyeste varighet i sekunder (NFR4, NFR6)
 
 **Given** sammenligningen
-**When** standardmodell og effort velges
+**When** effort og `max_tokens` velges
 **Then** det valgte oppsettet består SM-2 (alle må-krav i minst 4 av 5 annonser), SM-3 (≥ 70 % riktig status, 0 må-krav som mangler blir truffet) og SM-C1 (≤ 20 % avvik)
 **And** ingen analyse i rapporten for det valgte oppsettet koster over 2 kr, og ingen tar over 60 s (NFR4, NFR6, AD-14)
 
@@ -857,9 +859,9 @@ So that appen bruker det billigste oppsettet som holder SM-2, SM-3 og SM-C1 inne
 **And** består ingen av oppsettene alle målene, står det rett ut hvilke mål som ikke holder, og hva gruppen gjør med det (for eksempel endring i prompten eller et issue)
 
 **Given** at valget er gjort
-**When** `.env.example` og arkitekturen leses
-**Then** `.env.example` har den valgte modellen som standard for `ANTHROPIC_MODEL`, og standardverdien i `config.py` er den samme (AR12)
-**And** endringen av modell, effort eller `max_tokens` i AD-8 er ført i arkitekturens memlog med dato og henvisning til begrunnelsen (AD-8, Deferred)
+**When** adapteren, `.env.example` og arkitekturen leses
+**Then** effort og `max_tokens` er satt på ett sted i adapteren, og `ANTHROPIC_MODEL` har fortsatt `claude-opus-5-5` som standard i `.env.example` og `config.py` (AR10, AR12)
+**And** endringen av effort eller `max_tokens` i AD-8 er ført i arkitekturens memlog med dato og henvisning til begrunnelsen (AD-8, Deferred)
 
 **Given** at standardverdiene er endret
 **When** `uv run pytest` kjøres
@@ -890,7 +892,7 @@ So that appen oppfyller WCAG 2.2 AA (NFR15, EXPERIENCE Accessibility Floor).
 
 **Given** Playwright-testene med `@axe-core/playwright` (fra Epic 1)
 **When** de kjøres på input, analyserer, resultat (alle trinn og «Vis alt») og alle meldinger
-**Then** axe gir 0 funn med alvorlighet «serious» eller «critical» (AD-9)
+**Then** axe gir ingen brudd, som i story 1.9 (AD-9, UX-DR17)
 
 **Given** siden med 200 % zoom og 1280 px vindusbredde
 **When** input og resultat gås gjennom (manuelt)

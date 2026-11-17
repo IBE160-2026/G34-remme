@@ -328,7 +328,7 @@ docker-compose.yml  .env.example  .gitattributes  README.md
 | --- | --- |
 | Publisering på nett, kostnadstak på kontonivå og misbruksvern | v2 i PRD §7.2. Appen kjøres bare lokalt i v1. |
 | PDF-opplasting og annonse som lenke eller bilde | v2 i PRD §7.2. Endrer bare input, ikke kjernen. |
-| Endelig modell (Opus 5.5 eller Sonnet 5.5), effort og `max_tokens` | Avgjøres etter testsettet (AD-9). Verdiene er innstillinger i AD-8, så valget flytter ingen grenser. |
+| Effort og `max_tokens` for `claude-opus-5-5` | Avgjøres etter testsettet (AD-9). Modellen er fast Opus 5.5, og Sonnet 5.5 sammenlignes ikke (brukerens valg 2026-11-17). Verdiene er innstillinger i AD-8, så valget flytter ingen grenser. |
 | Selve prompten og innholdet i fixturene | Skrives i stories innenfor rammene i AD-2, AD-8 og AD-9. |
 | Bruddpunkt under 1280 px | Åpent punkt i UX. Påvirker bare frontendlayout. |
 | CI-pipeline | Ikke krav i v1. Testene kjøres lokalt (`uv run pytest`, `npm test`, `npx playwright test`). |

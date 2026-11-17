@@ -1,0 +1,64 @@
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created, ready for development
+#   - in-progress: Developer actively working on implementation
+#   - review: Implementation complete, ready for review
+#   - done: Story completed
+
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+
+# Action Item Status:
+#   - open: Committed during a retrospective, not yet addressed
+#   - in-progress: Actively being worked on
+#   - done: Completed
+
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when its first story starts (via build's sprint sync)
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates the next story after the previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+# - Retrospective appends its action items to action_items; the status view surfaces open ones
+generated: 11-17-2026 19:06
+last_updated: 11-17-2026 19:13
+project: G34-remme
+project_key: NOKEY
+tracking_system: file-system
+story_location: .docs/implementation-artifacts
+development_status:
+  epic-1: backlog
+  1-1-skjelett-som-starter-i-demomodus: backlog
+  1-2-domenekjernen-sitatkontroll-score-potensiell-score-sortering: backlog
+  1-3-analysepipeline-med-fixture-tilkobling-og-api-kontrakt: backlog
+  1-4-inputveiviser-lime-inn-cv-og-annonse: backlog
+  1-5-analysere-og-vise-utfall: backlog
+  1-6-resultatoversikt: backlog
+  1-7-trinnvis-gjennomgang: backlog
+  1-8-godt-treff-og-ny-annonse: backlog
+  1-9-hele-flyten-testet-ende-til-ende-i-demomodus-med-tilgjengeli: backlog
+  epic-1-retrospective: optional
+
+  epic-2: backlog
+  2-1-claude-tilkoblingen-med-strukturert-output-og-feilhåndtering: backlog
+  2-2-prompten-kravuttrekk-status-sitater-og-hint: backlog
+  2-3-tidsbudsjettet-gjennom-kjeden: backlog
+  2-4-kostnad-og-tokens-per-analyse: backlog
+  epic-2-retrospective: optional
+
+  epic-3: backlog
+  3-1-testsettet-med-fasit: backlog
+  3-2-kjøreskript-og-rapport-for-testsettet: backlog
+  3-3-effort-og-max_tokens-for-opus-5-5-ut-fra-testsettet: backlog
+  3-4-tilgjengelighetsrevisjon-etter-wcag-2-2-aa: backlog
+  3-5-brukertest-med-en-medstudent-sm-5: backlog
+  3-6-readme-for-sensor-og-sluttsjekk: backlog
+  epic-3-retrospective: optional
