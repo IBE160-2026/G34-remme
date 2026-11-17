@@ -10,7 +10,7 @@
 - [x] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD-tilbakemelding 4.3: målbar grense for SM-C1, flytt SM-C2 til FR-6/FR-9 (før testplanen) (løst 2026-11-15)
 - [x] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD-tilbakemelding 4.5: maks inputlengde, presisere FR-3, FR-17, FR-4 (løst 2026-11-15)
 - [x] 2026-11-15 [prd](997-2026-11-04-21-30-00-prd.md) — PRD: SM-4 gjelder FR-8 «hvis FR-8 er med» (løst 2026-11-15)
-- [ ] 2026-11-15 [impeccable-installasjon](995-2026-11-15-12-22-36-impeccable-installasjon.md) — Avklar om Impeccable (`.claude/skills/impeccable/`, ca. 24 MB med binærfil, og `.claude/agents/`) skal committes for gruppen
+- [x] 2026-11-15 [impeccable-installasjon](995-2026-11-15-12-22-36-impeccable-installasjon.md) — Avklar om Impeccable (`.claude/skills/impeccable/`, ca. 24 MB med binærfil, og `.claude/agents/`) skal committes for gruppen — committet 30fc14b, gruppen har bare ett medlem, men foreleser og sensor skal se alt (løst 2026-11-17)
 - [ ] 2026-11-15 [impeccable-installasjon](995-2026-11-15-12-22-36-impeccable-installasjon.md) — Kjør `/impeccable init` etter omstart av Claude Code, før `bmad-ux`
 - [x] 2026-11-15 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Vurder de 10 UX-konseptene (`ux-designs/ux-G34-remme-2026-11-15/.working/konsepter.html`) og velg retning å drille videre i (løst 2026-11-15: 01-utseende + 09-funksjonalitet)
 - [x] 2026-11-15 [ux-design](994-2026-11-15-12-44-48-ux-design.md) — Vurder hybridkonseptene 11–13 (01-utseende + 09-funksjonalitet) og velg retning for DESIGN.md/EXPERIENCE.md (løst 2026-11-16: konsept 14 = 11 + 13)
