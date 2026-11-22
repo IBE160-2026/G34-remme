@@ -30,6 +30,9 @@
 - [x] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Samkjør axe-kravet i story 1.9 («ingen brudd») og 3.4 («0 serious/critical») (løst 2026-11-17)
 - [x] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Story 2.1: sjekk `output_format` mot `output_config.format` i anthropic SDK 2.9.0 (løst 2026-11-17)
 - [ ] 2026-11-17 [sprint-planning](991-2026-11-17-19-06-52-sprint-planning.md) — Velg effort og `max_tokens` for Opus 5.5 etter testsettet (story 3.3)
-- [ ] 2026-11-17 [story-1-1-spec](990-2026-11-17-19-32-24-story-1-1-spec.md) — Implementer story 1.1 med `bmad-build` i en ny økt (specen er ready-for-dev)
-- [ ] 2026-11-17 [story-1-1-spec](990-2026-11-17-19-32-24-story-1-1-spec.md) — Story 1.1: sjekk ESLint 10 mot `eslint-config-next@16.4.6` og `allowedDevOrigins` for 127.0.0.1
-- [ ] 2026-11-17 [story-1-1-spec](990-2026-11-17-19-32-24-story-1-1-spec.md) — Før Docker Compose ≥ 2.24 (fra 2.20) inn i arkitekturens memlogg
+- [x] 2026-11-17 [story-1-1-spec](990-2026-11-17-19-32-24-story-1-1-spec.md) — Implementer story 1.1 med `bmad-build` i en ny økt (specen er ready-for-dev) (løst 2026-11-22)
+- [x] 2026-11-17 [story-1-1-spec](990-2026-11-17-19-32-24-story-1-1-spec.md) — Story 1.1: sjekk ESLint 10 mot `eslint-config-next@16.4.6` og `allowedDevOrigins` for 127.0.0.1 (løst 2026-11-22: ESLint 9.39.5, allowedDevOrigins satt)
+- [x] 2026-11-17 [story-1-1-spec](990-2026-11-17-19-32-24-story-1-1-spec.md) — Før Docker Compose ≥ 2.24 (fra 2.20) inn i arkitekturens memlogg (løst 2026-11-22)
+- [ ] 2026-11-22 [story-1-1-implementering](988-2026-11-22-11-56-32-story-1-1-implementering.md) — Story 1.1 står som `review`: kjør `bmad-code-review`, helst med annen LLM, og sett til done
+- [ ] 2026-11-22 [story-1-1-implementering](988-2026-11-22-11-56-32-story-1-1-implementering.md) — Tester for `/readme`-siden (README funnet / mangler), se `.docs/implementation-artifacts/deferred-work.md`
+- [ ] 2026-11-22 [story-1-1-implementering](988-2026-11-22-11-56-32-story-1-1-implementering.md) — Kjør `docker compose up` på nytt etter review-fiksene og sjekk banneret
