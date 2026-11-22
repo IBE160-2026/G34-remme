@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1000" height="640" fill="#F6F1E9"/>
+
+  <!-- Tittel -->
+  <text x="40" y="52" font-family="Georgia, serif" font-size="28" fill="#2A2420">main og en sidegren – slik ser det ut i G34-remme nå</text>
+  <text x="40" y="80" font-size="15" fill="#5E544B">Hver sirkel er en commit. Fylt = finnes nå. Stiplet = kommer senere.</text>
+
+  <!-- main-linjen -->
+  <line x1="60" y1="190" x2="560" y2="190" stroke="#2A2420" stroke-width="4"/>
+  <line x1="560" y1="190" x2="940" y2="190" stroke="#2A2420" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="40" y="150" font-size="18" font-weight="600" fill="#2A2420">main</text>
+  <text x="100" y="150" font-size="14" fill="#5E544B">den «offisielle» versjonen – det sensor ser på GitHub som standard</text>
+
+  <!-- commits på main -->
+  <g fill="#2A2420">
+    <circle cx="110" cy="190" r="11"/>
+    <circle cx="200" cy="190" r="11"/>
+    <circle cx="290" cy="190" r="11"/>
+  </g>
+  <text x="110" y="225" font-size="12" fill="#5E544B" text-anchor="middle">1c0588c</text>
+  <text x="200" y="225" font-size="12" fill="#5E544B" text-anchor="middle">bc97b15</text>
+  <text x="200" y="241" font-size="12" fill="#5E544B" text-anchor="middle">sprint planning</text>
+  <text x="290" y="225" font-size="12" fill="#5E544B" text-anchor="middle">570ea83</text>
+  <text x="290" y="241" font-size="12" fill="#5E544B" text-anchor="middle">grenen lages her</text>
+
+  <!-- main står stille -->
+  <text x="430" y="178" font-size="13" fill="#5E544B" font-style="italic" text-anchor="middle">main står stille mens du jobber på grenen</text>
+
+  <!-- grenen ut -->
+  <path d="M290 190 C 330 190, 330 380, 380 380" fill="none" stroke="#9A4A2E" stroke-width="4"/>
+  <line x1="380" y1="380" x2="660" y2="380" stroke="#9A4A2E" stroke-width="4"/>
+  <line x1="660" y1="380" x2="740" y2="380" stroke="#9A4A2E" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="380" y="440" font-size="18" font-weight="600" fill="#9A4A2E">story/1-1</text>
+  <text x="380" y="462" font-size="14" fill="#5E544B">sidegren: en trygg kopi der story 1.1 bygges uten å røre main</text>
+
+  <!-- commits på grenen -->
+  <g fill="#9A4A2E">
+    <circle cx="420" cy="380" r="11"/>
+    <circle cx="510" cy="380" r="11"/>
+    <circle cx="600" cy="380" r="11"/>
+  </g>
+  <circle cx="700" cy="380" r="11" fill="#F6F1E9" stroke="#9A4A2E" stroke-width="3" stroke-dasharray="4 3"/>
+  <text x="420" y="355" font-size="12" fill="#5E544B" text-anchor="middle">a501b87</text>
+  <text x="510" y="355" font-size="12" fill="#5E544B" text-anchor="middle">db4acd6 spec</text>
+  <text x="600" y="355" font-size="12" fill="#5E544B" text-anchor="middle">9ee3b87</text>
+  <text x="700" y="410" font-size="12" fill="#5E544B" text-anchor="middle">koden for 1.1</text>
+  <text x="700" y="426" font-size="12" fill="#5E544B" text-anchor="middle">+ review</text>
+
+  <!-- merge tilbake -->
+  <path d="M711 380 C 780 380, 780 190, 830 190" fill="none" stroke="#9A4A2E" stroke-width="4" stroke-dasharray="10 8"/>
+  <circle cx="840" cy="190" r="13" fill="#F6F1E9" stroke="#2A2420" stroke-width="3" stroke-dasharray="4 3"/>
+  <text x="840" y="160" font-size="13" font-weight="600" fill="#2A2420" text-anchor="middle">merge</text>
+  <text x="840" y="225" font-size="12" fill="#5E544B" text-anchor="middle">via pull request</text>
+  <text x="840" y="241" font-size="12" fill="#5E544B" text-anchor="middle">når du bestemmer det</text>
+
+  <!-- Forklaring -->
+  <line x1="40" y1="500" x2="960" y2="500" stroke="#D4C9BA" stroke-width="1"/>
+  <text x="40" y="530" font-family="Georgia, serif" font-size="19" fill="#2A2420">Blir alt merget til main til slutt? Bare hvis du gjør det.</text>
+  <text x="40" y="560" font-size="14" fill="#2A2420">• Git merger aldri av seg selv. Grenen havner i main først når du lager en pull request og trykker «Merge».</text>
+  <text x="40" y="584" font-size="14" fill="#2A2420">• Planen: story/1-1 merges når story 1.1 er bygget og gjennomgått. Så kan grenen slettes – alt ligger i main.</text>
+  <text x="40" y="608" font-size="14" fill="#2A2420">• En gren du ikke merger (et eksperiment som ikke ble bra), kan bare slettes. Main påvirkes da aldri.</text>
+</svg>
