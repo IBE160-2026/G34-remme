@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" width="1100" height="800" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2A2420"/>
+    </marker>
+    <marker id="pil-leire" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9A4A2E"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="800" fill="#F6F1E9"/>
+
+  <!-- Tittel -->
+  <text x="40" y="52" font-family="Georgia, serif" font-size="28" fill="#2A2420">Slik fungerer bmad-build – fra story til ferdig kode</text>
+  <text x="40" y="80" font-size="15" fill="#5E544B">Fem steg. Du bestemmer ved sjekkpunktet, og ved spørsmål bare du kan svare på. Resten gjør Claude og subagentene.</text>
+
+  <!-- Statuslinje -->
+  <text x="40" y="122" font-size="13" font-weight="600" fill="#5E544B">Status i specen:</text>
+  <g font-size="12" fill="#2A2420">
+    <rect x="160" y="108" width="62" height="22" rx="3" fill="#FFFDF9" stroke="#8E806F"/><text x="191" y="123" text-anchor="middle">draft</text>
+    <rect x="370" y="108" width="100" height="22" rx="3" fill="#EEDFBF" stroke="#8E806F"/><text x="420" y="123" text-anchor="middle">ready-for-dev</text>
+    <rect x="490" y="108" width="88" height="22" rx="3" fill="#FFFDF9" stroke="#8E806F"/><text x="534" y="123" text-anchor="middle">in-progress</text>
+    <rect x="700" y="108" width="80" height="22" rx="3" fill="#FFFDF9" stroke="#8E806F"/><text x="740" y="123" text-anchor="middle">in-review</text>
+    <rect x="928" y="108" width="54" height="22" rx="3" fill="#FFFDF9" stroke="#8E806F"/><text x="955" y="123" text-anchor="middle">done</text>
+  </g>
+
+  <!-- Bokser -->
+  <g fill="#FFFDF9" stroke="#2A2420" stroke-width="1.5">
+    <rect x="40" y="150" width="180" height="240" rx="4"/>
+    <rect x="250" y="150" width="180" height="240" rx="4"/>
+    <rect x="460" y="150" width="180" height="240" rx="4"/>
+    <rect x="670" y="150" width="180" height="240" rx="4"/>
+    <rect x="880" y="150" width="180" height="240" rx="4"/>
+  </g>
+
+  <!-- Piler mellom boksene -->
+  <g stroke="#2A2420" stroke-width="2" marker-end="url(#pil)">
+    <line x1="220" y1="270" x2="248" y2="270"/>
+    <line x1="430" y1="270" x2="458" y2="270"/>
+    <line x1="640" y1="270" x2="668" y2="270"/>
+    <line x1="850" y1="270" x2="878" y2="270"/>
+  </g>
+
+  <!-- Steg 1 -->
+  <text x="55" y="178" font-size="12" fill="#5E544B">STEG 1</text>
+  <text x="55" y="202" font-family="Georgia, serif" font-size="20" fill="#2A2420">Avklar</text>
+  <g font-size="13" fill="#2A2420">
+    <text x="55" y="232">Finner storyen i</text>
+    <text x="55" y="250">epics.md og sprint-</text>
+    <text x="55" y="268">status.yaml.</text>
+    <text x="55" y="294">Lager epic-kontekst</text>
+    <text x="55" y="312">(subagent).</text>
+    <text x="55" y="338">Sjekker at git-grenen</text>
+    <text x="55" y="356">og arbeidskopien er ok.</text>
+  </g>
+
+  <!-- Steg 2 -->
+  <text x="265" y="178" font-size="12" fill="#5E544B">STEG 2</text>
+  <text x="265" y="202" font-family="Georgia, serif" font-size="20" fill="#2A2420">Planlegg</text>
+  <g font-size="13" fill="#2A2420">
+    <text x="265" y="232">Undersøker koden og</text>
+    <text x="265" y="250">skriver en spec: mål,</text>
+    <text x="265" y="268">grenser, oppgaver, test.</text>
+    <text x="265" y="294">Åpne spørsmål stilles</text>
+    <text x="265" y="312">til deg.</text>
+  </g>
+  <rect x="262" y="328" width="156" height="50" rx="3" fill="#2A2420"/>
+  <text x="340" y="349" font-size="13" font-weight="600" fill="#F6F1E9" text-anchor="middle">Sjekkpunkt 1</text>
+  <text x="340" y="367" font-size="12" fill="#F6F1E9" text-anchor="middle">du godkjenner specen</text>
+
+  <!-- Steg 3 -->
+  <text x="475" y="178" font-size="12" fill="#5E544B">STEG 3</text>
+  <text x="475" y="202" font-family="Georgia, serif" font-size="20" fill="#2A2420">Bygg</text>
+  <g font-size="13" fill="#2A2420">
+    <text x="475" y="232">En subagent bygger</text>
+    <text x="475" y="250">koden ut fra specen</text>
+    <text x="475" y="268">alene.</text>
+    <text x="475" y="294">Hver oppgave og hver</text>
+    <text x="475" y="312">rad i testmatrisen</text>
+    <text x="475" y="330">sjekkes mot endringene.</text>
+  </g>
+
+  <!-- Steg 4 -->
+  <text x="685" y="178" font-size="12" fill="#5E544B">STEG 4</text>
+  <text x="685" y="202" font-family="Georgia, serif" font-size="20" fill="#2A2420">Review</text>
+  <g font-size="13" fill="#2A2420">
+    <text x="685" y="232">Tre uavhengige</text>
+    <text x="685" y="250">reviewere samtidig:</text>
+    <text x="695" y="272">• Blind Hunter</text>
+    <text x="695" y="290">• Edge Case Hunter</text>
+    <text x="695" y="308">• Verification Gap</text>
+    <text x="685" y="334">Hvert funn sjekkes og</text>
+    <text x="685" y="352">sorteres (se under).</text>
+  </g>
+
+  <!-- Steg 5 -->
+  <text x="895" y="178" font-size="12" fill="#5E544B">STEG 5</text>
+  <text x="895" y="202" font-family="Georgia, serif" font-size="20" fill="#2A2420">Presenter</text>
+  <g font-size="13" fill="#2A2420">
+    <text x="895" y="232">Specen og sprint-</text>
+    <text x="895" y="250">status settes til done.</text>
+    <text x="895" y="276">Lokal commit.</text>
+    <text x="895" y="302">Kort oppsummering og</text>
+    <text x="895" y="320">forslag: pull request</text>
+    <text x="895" y="338">eller walkthrough.</text>
+  </g>
+
+  <!-- Du er her -->
+  <text x="445" y="420" font-size="13" font-weight="600" fill="#9A4A2E" text-anchor="middle">▲ Story 1.1 står her</text>
+  <text x="445" y="437" font-size="12" fill="#9A4A2E" text-anchor="middle">(godkjent spec, ingen kode ennå)</text>
+  <line x1="445" y1="392" x2="445" y2="406" stroke="#9A4A2E" stroke-width="2"/>
+
+  <!-- Løkker tilbake fra review -->
+  <path d="M760 390 C 760 480, 560 480, 560 392" fill="none" stroke="#9A4A2E" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#pil-leire)"/>
+  <text x="635" y="477" font-size="12" fill="#9A4A2E" text-anchor="middle">bad_spec: koden på nytt</text>
+
+  <path d="M790 390 C 790 545, 330 545, 330 394" fill="none" stroke="#9A4A2E" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#pil-leire)"/>
+  <text x="560" y="532" font-size="12" fill="#9A4A2E" text-anchor="middle">intent_gap: noe bare du kan avgjøre – tilbake til deg</text>
+
+  <!-- Forklaring av sorteringen -->
+  <line x1="40" y1="575" x2="1060" y2="575" stroke="#D4C9BA" stroke-width="1"/>
+  <text x="40" y="605" font-family="Georgia, serif" font-size="19" fill="#2A2420">Hva skjer med funnene fra review?</text>
+  <g font-size="14" fill="#2A2420">
+    <text x="40" y="635"><tspan font-weight="600">patch</tspan> – liten, tydelig feil: rettes automatisk, testene kjøres på nytt.</text>
+    <text x="40" y="659"><tspan font-weight="600">bad_spec</tspan> – specen var uklar: specen rettes, koden lages på nytt (løkke til steg 3).</text>
+    <text x="40" y="683"><tspan font-weight="600">intent_gap</tspan> – målet er uklart: du får spørsmålet, så planlegges det på nytt (løkke til steg 2).</text>
+    <text x="40" y="707"><tspan font-weight="600">defer</tspan> – gammel feil eller usikker: noteres til senere, stopper ikke storyen.  <tspan font-weight="600">false</tspan> – funnet stemte ikke: forkastes.</text>
+  </g>
+  <line x1="40" y1="727" x2="1060" y2="727" stroke="#D4C9BA" stroke-width="1"/>
+  <text x="40" y="755" font-size="13" fill="#5E544B">Liten endring uten åpne spørsmål? Da tar bmad-build snarveien «oneshot»: bygg, review og presenter i ett steg, uten sjekkpunkt.</text>
+  <text x="40" y="777" font-size="13" fill="#5E544B">Etter bmad-build: du lager en pull request og merger grenen til main (se git-main-og-sidegren.svg).</text>
+</svg>

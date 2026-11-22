@@ -20,11 +20,11 @@
   <text x="110" y="225" font-size="12" fill="#5E544B" text-anchor="middle">1c0588c</text>
   <text x="200" y="225" font-size="12" fill="#5E544B" text-anchor="middle">bc97b15</text>
   <text x="200" y="241" font-size="12" fill="#5E544B" text-anchor="middle">sprint planning</text>
-  <text x="290" y="225" font-size="12" fill="#5E544B" text-anchor="middle">570ea83</text>
-  <text x="290" y="241" font-size="12" fill="#5E544B" text-anchor="middle">grenen lages her</text>
+  <text x="290" y="168" font-size="12" fill="#5E544B" text-anchor="middle">570ea83</text>
+  <text x="336" y="290" font-size="12" fill="#9A4A2E">← grenen lages her</text>
 
   <!-- main står stille -->
-  <text x="430" y="178" font-size="13" fill="#5E544B" font-style="italic" text-anchor="middle">main står stille mens du jobber på grenen</text>
+  <text x="460" y="178" font-size="13" fill="#5E544B" font-style="italic" text-anchor="middle">main står stille mens du jobber på grenen</text>
 
   <!-- grenen ut -->
   <path d="M290 190 C 330 190, 330 380, 380 380" fill="none" stroke="#9A4A2E" stroke-width="4"/>
@@ -50,8 +50,8 @@
   <path d="M711 380 C 780 380, 780 190, 830 190" fill="none" stroke="#9A4A2E" stroke-width="4" stroke-dasharray="10 8"/>
   <circle cx="840" cy="190" r="13" fill="#F6F1E9" stroke="#2A2420" stroke-width="3" stroke-dasharray="4 3"/>
   <text x="840" y="160" font-size="13" font-weight="600" fill="#2A2420" text-anchor="middle">merge</text>
-  <text x="840" y="225" font-size="12" fill="#5E544B" text-anchor="middle">via pull request</text>
-  <text x="840" y="241" font-size="12" fill="#5E544B" text-anchor="middle">når du bestemmer det</text>
+  <text x="862" y="222" font-size="12" fill="#5E544B">via pull request</text>
+  <text x="862" y="238" font-size="12" fill="#5E544B">når du vil</text>
 
   <!-- Forklaring -->
   <line x1="40" y1="500" x2="960" y2="500" stroke="#D4C9BA" stroke-width="1"/>
