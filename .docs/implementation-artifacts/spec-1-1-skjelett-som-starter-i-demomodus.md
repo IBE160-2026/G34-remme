@@ -2,7 +2,8 @@
 title: 'Story 1.1: Skeleton that starts in demo mode'
 type: 'feature'
 created: '2026-11-17'
-status: 'ready-for-dev'
+status: 'done'
+baseline_commit: 'a426ab3d147e6c72f5b131e606162e445841e9ab'
 route: 'dispatch'
 review_loop_iteration: 0
 context:
@@ -59,13 +60,13 @@ context:
 ## Tasks & Acceptance
 
 **Execution:**
-- [ ] `backend/pyproject.toml`, `backend/.python-version`, `backend/uv.lock` -- uv project (`fastapi[standard]`, pydantic-settings; dev: pytest, httpx, ruff, import-linter) with ruff config and import-linter contracts (domain imports no other layer; only `app.llm` may import `anthropic`; layers api → analysis → domain/llm) -- AR1, AR3
-- [ ] `backend/app/{domain,analysis,llm,api}/__init__.py`, `backend/app/config.py`, `backend/app/main.py`, `backend/app/api/status.py` -- packages, pydantic-settings `Settings` with absolute `.env` path, `MAX_CHARS`, `is_demo`, `create_app()` with the status route and the startup JSON log line -- AD-3, AD-10, AD-13
-- [ ] `backend/tests/conftest.py`, `backend/tests/test_status.py`, `backend/tests/test_architecture.py` -- force `ANTHROPIC_API_KEY=""`; test demo true for missing/empty/whitespace key and false for a set key; log contains no key; import-linter contracts pass -- AD-9
-- [ ] `backend/Dockerfile`, `frontend/Dockerfile`, `backend/.dockerignore`, `frontend/.dockerignore`, `docker-compose.yml` -- `python:3.14-slim` / `node:26-slim`; backend `fastapi run --host 0.0.0.0 --port 8000` with optional `env_file: .env`; frontend `next dev -p 3000` with `BACKEND_URL=http://backend:8000`, no env_file, README bind-mounted read-only with `README_PATH`; ports on 127.0.0.1; healthcheck on `/api/status` -- AD-11
-- [ ] `frontend/` (package.json, package-lock.json, next.config.ts, tsconfig, eslint.config.mjs, .prettierrc, .prettierignore, postcss) -- Next 16.4.6, React 19.3.1, TS 5.9.3, Tailwind 4.3.5; `/api/:path*` rewrite to `BACKEND_URL` (default `http://127.0.0.1:8000`) -- AD-10
-- [ ] `frontend/app/globals.css`, `frontend/app/layout.tsx`, `frontend/app/page.tsx`, `frontend/components/demo-banner.tsx`, `frontend/lib/messages.ts`, `frontend/app/readme/page.tsx` -- tokens in `@theme`, shadcn variables mapped to tokens, `lang="nb"`, client-side status fetch and banner, local README page -- UX-DR1, UX-DR16, FR15
-- [ ] `.env.example`, `.gitattributes`, `README.md` -- documented variables; `backend/app/fixtures/** text eol=lf`; start with and without Docker, demo mode, how to add the key -- NFR3, AR12
+- [x] `backend/pyproject.toml`, `backend/.python-version`, `backend/uv.lock` -- uv project (`fastapi[standard]`, pydantic-settings; dev: pytest, httpx, ruff, import-linter) with ruff config and import-linter contracts (domain imports no other layer; only `app.llm` may import `anthropic`; layers api → analysis → domain/llm) -- AR1, AR3
+- [x] `backend/app/{domain,analysis,llm,api}/__init__.py`, `backend/app/config.py`, `backend/app/main.py`, `backend/app/api/status.py` -- packages, pydantic-settings `Settings` with absolute `.env` path, `MAX_CHARS`, `is_demo`, `create_app()` with the status route and the startup JSON log line -- AD-3, AD-10, AD-13
+- [x] `backend/tests/conftest.py`, `backend/tests/test_status.py`, `backend/tests/test_architecture.py` -- force `ANTHROPIC_API_KEY=""`; test demo true for missing/empty/whitespace key and false for a set key; log contains no key; import-linter contracts pass -- AD-9
+- [x] `backend/Dockerfile`, `frontend/Dockerfile`, `backend/.dockerignore`, `frontend/.dockerignore`, `docker-compose.yml` -- `python:3.14-slim` / `node:26-slim`; backend `fastapi run --host 0.0.0.0 --port 8000` with optional `env_file: .env`; frontend `next dev -p 3000` with `BACKEND_URL=http://backend:8000`, no env_file, README bind-mounted read-only with `README_PATH`; ports on 127.0.0.1; healthcheck on `/api/status` -- AD-11
+- [x] `frontend/` (package.json, package-lock.json, next.config.ts, tsconfig, eslint.config.mjs, .prettierrc, .prettierignore, postcss) -- Next 16.4.6, React 19.3.1, TS 5.9.3, Tailwind 4.3.5; `/api/:path*` rewrite to `BACKEND_URL` (default `http://127.0.0.1:8000`) -- AD-10
+- [x] `frontend/app/globals.css`, `frontend/app/layout.tsx`, `frontend/app/page.tsx`, `frontend/components/demo-banner.tsx`, `frontend/lib/messages.ts`, `frontend/app/readme/page.tsx` -- tokens in `@theme`, shadcn variables mapped to tokens, `lang="nb"`, client-side status fetch and banner, local README page -- UX-DR1, UX-DR16, FR15
+- [x] `.env.example`, `.gitattributes`, `README.md` -- documented variables; `backend/app/fixtures/** text eol=lf`; start with and without Docker, demo mode, how to add the key -- NFR3, AR12
 
 **Acceptance Criteria:**
 - Given a fresh clone with no `.env`, when `docker compose up` runs, then both services start and `http://127.0.0.1:3000` shows «Demomodus – ingen API-nøkkel funnet».
@@ -74,9 +75,45 @@ context:
 
 ## Implementation Notes
 
+- **ESLint 9.39.5, not 10.15.0.** `eslint-config-next@16.4.6` itself accepts `eslint >=9`, but its dependencies `eslint-plugin-react@7.37.5`, `eslint-plugin-import@2.32.0` and `eslint-plugin-jsx-a11y@6.10.2` only accept `^9` as a peer. With ESLint 10, `npm ci` gives ERESOLVE peer warnings (overridden). 9.39.5 is the highest accepted version; npm prints a deprecation notice for it, but install and lint are clean.
+- **`allowedDevOrigins: ["127.0.0.1"]`** is set in `next.config.ts`. Without it Next 16 dev blocks its dev resources when the app is opened at `http://127.0.0.1:3000`, the page never hydrates, and the banner never appears.
+- **`/readme`:** `path.resolve(/*turbopackIgnore: true*/ process.cwd(), …)`, because Turbopack otherwise warns that the dynamic path traces the whole project into the server bundle.
+- **`anthropic` is not installed.** The forbidden contract with `include_external_packages` works without it (checked with a temporary `import anthropic` in `app.analysis`, which broke the contract).
+- **Import-linter contracts:** a forbidden contract keeps `app.domain` away from `app.api`, `app.analysis`, `app.llm`, `app.config` and `app.main`; a layers contract `app.api > app.analysis > app.domain | app.llm`; a forbidden contract for `anthropic` from every module outside `app.llm`.
+- **Tokens:** besides colours and shadows, `--font-*` and the other shadow namespaces (`inset-shadow`, `drop-shadow`, `text-shadow`) are reset. The shadcn variables in `:root` reference the tokens, and an `@theme inline` block aliases them (`--color-background: var(--background)` …) so later shadcn components resolve to DESIGN.md colours.
+- `.gitignore` gets `.import_linter_cache/`, which `lint-imports` creates in `backend/`.
+- **Frontend component test (added after the matrix test audit):** dev dependencies `vitest@5.1.0` (Stack table), `@testing-library/react@16.3.3`, `@testing-library/dom@10.4.2` (its peer) and `jsdom@31.0.1`, all pinned exact. No `@vitejs/plugin-react` is needed: Vite 8 (8.3.8, pulled in by Vitest) transforms the TSX itself. `frontend/vitest.config.ts` (jsdom, `@/` alias), `npm test` = `vitest run`, and `frontend/components/demo-banner.test.tsx` cover the frontend half of the I/O matrix with a mocked `fetch`: banner and `/readme` link when `demo: true`; no banner when `demo: false`; no banner, no crash and exactly one fetch when the request rejects or returns 500. Vite prints a notice that `vitest.config.ts` uses ESM syntax in a package without `"type": "module"`. It is only a warning about a future Vite default, and the tests run.
+- `next dev` generated `frontend/AGENTS.md` (Next.js agent rules). Kept; the file itself says to commit it.
+
 ## Spec Change Log
 
 ## Review Triage Log
+
+| # | Source | Location | Finding | Verdict | Route | Evidence |
+|---|--------|----------|---------|---------|-------|----------|
+| 1 | blind | diff | Lockfiles missing from diff | false | reject | Lockfiles were deliberately left out of the review diff; both exist on disk and are not ignored. |
+| 2 | blind, edge | sprint-status.yaml | Spec `in-review` vs sprint `in-progress` | false | reject | Expected mid-workflow; sprint-status is synced at the present step. |
+| 3 | blind, edge | frontend/.dockerignore, backend/.dockerignore | `.env*` not excluded; `COPY . .` would bake `frontend/.env.local` into the image | medium | patch | Frontend `.dockerignore` only lists `node_modules` and `.next`; violates "never put the key or .env in the frontend container". |
+| 4 | blind, edge | backend/app/main.py:31 | Startup log and `Settings()` run on module import | low | reject | Spec mandates module-level `app = create_app()`; the empty env var from conftest overrides any `.env` key, so no harm shown; a fix needs a lazy factory. |
+| 5 | blind | Dockerfiles | Containers run as root | low | reject | Local-only skeleton with ports bound to 127.0.0.1; no everyday harm. |
+| 6 | blind | frontend/Dockerfile | `next dev` without bind mount | false | reject | Explicit spec Design Note decision. |
+| 7 | blind | docker-compose.yml | No frontend healthcheck | low | reject | Cosmetic; nothing depends on frontend health. |
+| 8 | blind | demo-banner.tsx | StrictMode double fetch in dev | false | reject | Effect cleanup aborts the first request; no retry loop. |
+| 9 | blind | README.md | "bare eksempeldata" not true yet | low | reject | Describes intended demo behaviour landing in 1.3; no user harm. |
+| 10 | blind | README.md | `npx prettier` vs `format:check` | false | reject | Matches the spec's Verification commands. |
+| 11 | blind | .gitattributes | Global `* text=auto eol=lf` | false | reject | Required by spec Design Notes. |
+| 12 | blind | readme/page.tsx | Raw markdown shown | false | reject | User decision 2026-11-17: pre-wrapped plain text, no markdown dependency. |
+| 13 | blind | .env.example | `ANTHROPIC_MODEL` duplicated | false | reject | Spec requires both variables in `.env.example`. |
+| 14 | gap, edge, blind | backend/tests | Unset `ANTHROPIC_API_KEY` never tested (conftest always sets "") | medium | patch | Pre-verified gap; the fresh-clone path relies on the field default. |
+| 15 | gap, blind | frontend/next.config.ts | `/api/*` rewrite unverified | medium | patch | Pre-verified gap; banner tests mock `fetch`. |
+| 16 | edge | frontend/next.config.ts:4 | Empty `BACKEND_URL` bypasses `??` default | low | patch | Direct correction (`||`). |
+| 17 | edge | frontend/next.config.ts:4 | Trailing slash in `BACKEND_URL` | low | reject | Unlikely; fix adds normalisation. |
+| 18 | gap, blind | frontend/app/readme/page.tsx | `/readme` page and missing-file fallback untested | medium | defer | Pre-verified gap; async RSC testing needs extra setup; filed disposition defer. |
+| 19 | edge | backend/tests/test_architecture.py | `lint-imports` not on PATH without `uv run` | low | reject | README and spec run tests via `uv run`; fix adds a fallback path. |
+| 20 | edge | backend/pyproject.toml | Anthropic contract enumerates source modules | low | reject | The architecture plans no other top-level `app` modules; fix is not a direct correction. |
+| 21 | edge | backend/app/config.py | `.env` with UTF-8 BOM silently ignored | low | patch | Plausible on Windows; direct correction to `utf-8-sig`. |
+| 22 | edge | demo-banner.test.tsx | `demo:false` test asserts before the response settles | low | patch | Waits only one macrotask, unlike the 50 ms in the other no-banner tests; direct correction. |
+| 23 | edge | demo-banner.tsx | `setDemo` after unmount on abort | low | reject | No-op in React 19; harmless. |
 
 ## Design Notes
 

@@ -59,3 +59,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# import-linter cache
+.import_linter_cache/

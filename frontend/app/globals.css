@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/*
+ * DESIGN.md tokens, defined once. Tailwind defaults for colours, shadows and fonts
+ * are reset, so only DESIGN.md colours exist and shadows cannot be used.
+ */
+@theme {
+  --color-*: initial;
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --text-shadow-*: initial;
+  --font-*: initial;
+
+  --color-paper: #f6f1e9;
+  --color-field: #fffdf9;
+  --color-ink: #2a2420;
+  --color-on-ink: #f6f1e9;
+  --color-ink-muted: #5e544b;
+  --color-rule: #d4c9ba;
+  --color-rule-soft: #e6ddd0;
+  --color-field-border: #8e806f;
+  --color-highlight: #eedfbf;
+  --color-toc-active: #ece3d5;
+  --color-status-met: #4a6536;
+  --color-status-partial: #7a5710;
+  --color-status-missing: #8a3b2b;
+  --color-clay: #9a4a2e;
+  --color-disabled: #e4dacb;
+  --color-on-disabled: #62584f;
+  --color-demo-band: #efe4cc;
+  --color-selection: #d9e2ea;
+
+  --font-serif:
+    Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+  --font-sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --text-score: 64px;
+  --text-score--line-height: 1.1;
+  --text-score--letter-spacing: -0.01em;
+  --text-score--font-weight: 400;
+  --text-display: 48px;
+  --text-display--line-height: 1.15;
+  --text-display--letter-spacing: -0.01em;
+  --text-display--font-weight: 400;
+  --text-headline: 30px;
+  --text-headline--line-height: 1.2;
+  --text-headline--font-weight: 400;
+  --text-lede: 25px;
+  --text-lede--line-height: 1.35;
+  --text-lede--font-weight: 400;
+  --text-title: 22px;
+  --text-title--line-height: 1.3;
+  --text-title--font-weight: 400;
+  --text-quote: 17px;
+  --text-quote--line-height: 1.5;
+  --text-quote--font-weight: 400;
+  --text-body: 16px;
+  --text-body--line-height: 1.6;
+  --text-body--font-weight: 400;
+  --text-label: 15px;
+  --text-label--line-height: 1.4;
+  --text-label--font-weight: 600;
+  --text-meta: 13px;
+  --text-meta--line-height: 1.5;
+  --text-meta--font-weight: 400;
+
+  --radius-sm: 3px;
+  --radius: 4px;
+  --radius-full: 9999px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 48px;
+  --spacing-8: 64px;
+  --spacing-page-margin: 120px;
+  --spacing-margin-left-width: 240px;
+  --spacing-reading-column: 640px;
+  --spacing-margin-right-width: 240px;
+  --spacing-column-gap: 40px;
+}
+
+/* shadcn/ui variables. They only reference the DESIGN.md tokens above, never own values. */
+:root {
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --card: var(--color-paper);
+  --card-foreground: var(--color-ink);
+  --popover: var(--color-field);
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-ink);
+  --primary-foreground: var(--color-on-ink);
+  --secondary: var(--color-paper);
+  --secondary-foreground: var(--color-ink);
+  --muted: var(--color-disabled);
+  --muted-foreground: var(--color-ink-muted);
+  --accent: var(--color-toc-active);
+  --accent-foreground: var(--color-ink);
+  --destructive: var(--color-status-missing);
+  --border: var(--color-rule);
+  --input: var(--color-field-border);
+  --ring: var(--color-ink);
+}
+
+/* Aliases so shadcn utility classes (bg-background, text-primary ...) resolve to the tokens. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+  }
+
+  ::selection {
+    background-color: var(--color-selection);
+  }
+}

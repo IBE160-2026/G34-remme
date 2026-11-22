@@ -1,0 +1,2 @@
+* text=auto eol=lf
+backend/app/fixtures/** text eol=lf
